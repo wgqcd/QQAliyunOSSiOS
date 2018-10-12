@@ -30,10 +30,13 @@
     if ([filePath hasPrefix:@"/"]) {
         filePath = [filePath substringFromIndex:1];
     }
-    if ([filePath hasSuffix:@"/"]) {
-        filePath = [filePath substringToIndex:filePath.length - 1];
+    if (filePath && ![filePath hasSuffix:@"/"]) {
+        filePath = [filePath stringByAppendingString:@"/"];
     }
-    return [NSString stringWithFormat:@"https://%@.%@/%@/%@",self.bucketName,endpoint,filePath,self.imageName];
+    if (!filePath || ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+        filePath = @"";
+    }
+    return [NSString stringWithFormat:@"https://%@.%@/%@%@",self.bucketName,endpoint,filePath,self.imageName];
 }
 - (NSString *)description{
     
@@ -77,12 +80,16 @@
 }
 - (RACSignal<QQOSSResult< ALiOSSBucket *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path1:(NSString *)path{
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+
         NSString *filePath = path;
         if ([filePath hasPrefix:@"/"]) {
             filePath = [filePath substringFromIndex:1];
         }
-        if ([filePath hasSuffix:@"/"]) {
-            filePath = [filePath substringToIndex:filePath.length - 1];
+        if (filePath && ![filePath hasSuffix:@"/"]) {
+            filePath = [filePath stringByAppendingString:@"/"];
+        }
+        if (!filePath || ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+            filePath = @"";
         }
         NSMutableArray *taskArray = [NSMutableArray arrayWithCapacity:imageArray.count];
         NSMutableArray *requestArray = [NSMutableArray arrayWithCapacity:imageArray.count];
@@ -103,7 +110,7 @@
                 if ([aEndpoint hasPrefix:@"https://"]) {
                     aEndpoint = [aEndpoint substringFromIndex:8];
                 }
-                NSString *imageURL = [NSString stringWithFormat:@"https://%@.%@/%@/%@", bucketName,aEndpoint,filePath,imageName];
+                NSString *imageURL = [NSString stringWithFormat:@"https://%@.%@/%@%@", bucketName,aEndpoint,filePath,imageName];
                 [imageURLArray addObject:imageURL];
             }
             
@@ -126,8 +133,10 @@
                 result.StatusMsg = @"上传成功";
                 result.Body =  bucket;
             }
-            [subscriber sendNext:result];
-            [subscriber sendCompleted];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [subscriber sendNext:result];
+                [subscriber sendCompleted];
+            });
             return task;
         }];
         return [RACDisposable disposableWithBlock:^{
@@ -172,21 +181,16 @@
             result.StatusCode = -1;
             result.StatusMsg = @"阿里云token认证失败";
             result.error = [NSError errorWithDomain:result.StatusMsg code:-1 userInfo:nil];
-            [subscriber sendNext:result];
-            [subscriber sendCompleted];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [subscriber sendNext:result];
+                [subscriber sendCompleted];
+            });
             return nil;
         }];
     }
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        NSString *filePath = path;
-        if ([filePath hasPrefix:@"/"]) {
-            filePath = [filePath substringFromIndex:1];
-        }
-        if ([filePath hasSuffix:@"/"]) {
-            filePath = [filePath substringToIndex:filePath.length - 1];
-        }
         NSString *imageName = [self randomImageName];
-        OSSPutObjectRequest *request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:filePath imageName:imageName];
+        OSSPutObjectRequest *request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:path imageName:imageName];
         OSSTask *task = [self.ossClient putObject:request];
         [task   continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
             QQOSSResult *result = [[QQOSSResult alloc]init];
@@ -203,8 +207,10 @@
                 result.StatusMsg = @"上传成功";
                 result.Body =  bucket;
             }
-            [subscriber sendNext:result];
-            [subscriber sendCompleted];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [subscriber sendNext:result];
+                [subscriber sendCompleted];
+            });
             return task;
         }];
         return [RACDisposable disposableWithBlock:^{
@@ -220,11 +226,21 @@
     if (endpoint) {
         self.ossClient.endpoint = endpoint;
     }
+    NSString *filePath = path;
+    if ([filePath hasPrefix:@"/"]) {
+        filePath = [filePath substringFromIndex:1];
+    }
+    if (filePath && ![filePath hasSuffix:@"/"]) {
+        filePath = [filePath stringByAppendingString:@"/"];
+    }
+    if (!filePath || ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+        filePath = @"";
+    }
     NSAssert(bucketName, @"bucket不能为空");
     OSSPutObjectRequest  *_putRequest;
     _putRequest = [OSSPutObjectRequest new];
     _putRequest.bucketName = bucketName;
-    _putRequest.objectKey = [NSString stringWithFormat:@"%@/%@",path,imageName];
+    _putRequest.objectKey = [NSString stringWithFormat:@"%@%@",path,imageName];
     _putRequest.uploadingData = data;
     _putRequest.isAuthenticationRequired = YES;
     return _putRequest  ;
