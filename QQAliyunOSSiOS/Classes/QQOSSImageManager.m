@@ -305,14 +305,14 @@
 -(NSString*)randomImageName{
     
     NSString *time = [self.dateFormatter stringFromDate:[NSDate date]];
-    NSString *name = [NSString stringWithFormat:@"%@-%u.png",time,arc4random()%10000];
+    NSString *name = [NSString stringWithFormat:@"%@-%u.png",time,arc4random()];
     NSLog(@"随机名：%@",name);
     return name;
 }
 - (NSDateFormatter *)dateFormatter  {
     if (!_dateFormatter) {
         _dateFormatter = [[NSDateFormatter alloc]init];
-        _dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss";
+        _dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SS";
     }
     return _dateFormatter;
 }

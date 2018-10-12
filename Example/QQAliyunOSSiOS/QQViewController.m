@@ -8,7 +8,7 @@
 
 #import "QQViewController.h"
 #import <QQAliyunOSSiOS/QQOSSImageManager.h>
-#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjC/RACSignal.h>
 @interface QQViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
