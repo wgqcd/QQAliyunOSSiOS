@@ -70,7 +70,9 @@
 @property(nonatomic,strong)ALOSSToken            *token;
 @end
 @implementation QQOSSImageManager
-
++ (void)enableLog{
+    [OSSLog enableLog];
+}
 + (instancetype)sharedManager{
     static QQOSSImageManager *_sharedmanager;
     if (!_sharedmanager) {
