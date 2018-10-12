@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class RACSignal<__covariant ObjectType>;
+#import <ReactiveObjC/ReactiveObjc.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface ALiOSSBucket : NSObject
