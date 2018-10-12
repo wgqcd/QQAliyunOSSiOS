@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9612A51621705C68007DE8AD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 9612A51321705C67007DE8AD /* .gitkeep */; };
+		9612A51721705C68007DE8AD /* QQOSSImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612A51421705C67007DE8AD /* QQOSSImageManager.m */; };
 		E718E26A17B0F9F597E34176 /* Pods_QQAliyunOSSiOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96BE3D44BE09B9B0CF325D1 /* Pods_QQAliyunOSSiOS_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +64,10 @@
 		633D2547D28575C7B29E1917 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC03240EAAD1086605C512C2 /* QQAliyunOSSiOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QQAliyunOSSiOS.podspec; path = ../QQAliyunOSSiOS.podspec; sourceTree = "<group>"; };
+		9612A51321705C67007DE8AD /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		9612A51421705C67007DE8AD /* QQOSSImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQOSSImageManager.m; sourceTree = "<group>"; };
+		9612A51521705C67007DE8AD /* QQOSSImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQOSSImageManager.h; sourceTree = "<group>"; };
+		AC03240EAAD1086605C512C2 /* QQAliyunOSSiOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QQAliyunOSSiOS.podspec; path = ../QQAliyunOSSiOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C00199D929AA67202B3DFDC7 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQAliyunOSSiOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D96BE3D44BE09B9B0CF325D1 /* Pods_QQAliyunOSSiOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QQAliyunOSSiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4C0025113FA931685B4FB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -178,11 +183,23 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				9612A51221705C67007DE8AD /* Classes */,
 				AC03240EAAD1086605C512C2 /* QQAliyunOSSiOS.podspec */,
 				ED4C0025113FA931685B4FB5 /* README.md */,
 				633D2547D28575C7B29E1917 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9612A51221705C67007DE8AD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9612A51321705C67007DE8AD /* .gitkeep */,
+				9612A51421705C67007DE8AD /* QQOSSImageManager.m */,
+				9612A51521705C67007DE8AD /* QQOSSImageManager.h */,
+			);
+			name = Classes;
+			path = ../QQAliyunOSSiOS/Classes;
 			sourceTree = "<group>";
 		};
 		DF89A07B9543A609B3D5C521 /* Pods */ = {
@@ -282,6 +299,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				9612A51621705C68007DE8AD /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -392,6 +410,7 @@
 				6003F59E195388D20070C39A /* QQAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* QQViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9612A51721705C68007DE8AD /* QQOSSImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

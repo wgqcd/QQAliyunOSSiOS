@@ -22,7 +22,7 @@ DEPENDENCIES:
   - Expecta
   - "Expecta+Snapshots"
   - FBSnapshotTestCase
-  - QQAliyunOSSiOS (from `../`)
+  - QQAliyunOSSiOS (from `https://github.com/wgqcd/QQAliyunOSSiOS.git`)
   - Specta
 
 SPEC REPOS:
@@ -37,18 +37,23 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   QQAliyunOSSiOS:
-    :path: "../"
+    :git: https://github.com/wgqcd/QQAliyunOSSiOS.git
+
+CHECKOUT OPTIONS:
+  QQAliyunOSSiOS:
+    :commit: b1d90a258f7af72866059ea2f38a9a3043d3e638
+    :git: https://github.com/wgqcd/QQAliyunOSSiOS.git
 
 SPEC CHECKSUMS:
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  QQAliyunOSSiOS: 88ad45bdf7e8abf8a0b23681b8835939d9cf6582
+  QQAliyunOSSiOS: 5b3ddac7c71157f30e9e719e333762426f38ad23
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b8c0350803e9e37a01a8c19aff02a79591ab4207
+PODFILE CHECKSUM: fcfab654e88478b3716998cceb07abfb3443a7f0
 
 COCOAPODS: 1.5.3

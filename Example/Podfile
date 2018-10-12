@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'QQAliyunOSSiOS_Example' do
-  pod 'QQAliyunOSSiOS', :path => '../'
+    pod 'QQAliyunOSSiOS', :git => 'https://github.com/wgqcd/QQAliyunOSSiOS.git'
 
   target 'QQAliyunOSSiOS_Tests' do
     inherit! :search_paths

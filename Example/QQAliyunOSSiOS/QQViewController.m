@@ -7,7 +7,7 @@
 //
 
 #import "QQViewController.h"
-#import ""
+#import <QQAliyunOSSiOS/QQAliyunOSSiOS.h>
 @interface QQViewController ()
 
 @end
