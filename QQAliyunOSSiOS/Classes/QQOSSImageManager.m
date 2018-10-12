@@ -5,9 +5,14 @@
 //  Created by 魏国强 on 2018/10/12.
 //
 
+
+#define GET_TOKEN_URL  @"http://192.168.1.172:7080"
+#define DEFAULT_ENDPOINT @"https://oss-cn-beijing.aliyuncs.com"
+
 #import "QQOSSImageManager.h"
 #import <AliyunOSSiOS/AliyunOSSiOS.h>
 #import <ReactiveObjC/ReactiveObjc.h>
+#import <YYModel/YYModel.h>
 @implementation ALiOSSBucket
 - (NSString *)host{
     NSString *endpoint = self.endpoint;
@@ -64,13 +69,13 @@
 @implementation QQOSSImageManager
 
 + (instancetype)sharedManager{
-    static ALOSSManager *_sharedmanager;
+    static QQOSSImageManager *_sharedmanager;
     if (!_sharedmanager) {
-        _sharedmanager  = [[ALOSSManager alloc]init];
+        _sharedmanager  = [[QQOSSImageManager alloc]init];
     }
     return _sharedmanager ;
 }
-- (RACSignal<RXResult< ALiOSSBucket *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path1:(NSString *)path{
+- (RACSignal<QQOSSResult< ALiOSSBucket *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path1:(NSString *)path{
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         NSString *filePath = path;
         if ([filePath hasPrefix:@"/"]) {
@@ -112,7 +117,7 @@
         OSSTask *allTask ;
         allTask =   [OSSTask taskForCompletionOfAllTasks:taskArray];
         [allTask continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
-            RXResult *result = [[RXResult alloc]init];
+            QQOSSResult *result = [[QQOSSResult alloc]init];
             if (task.error) {
                 result.error = task.error;
                 result.StatusCode = -1;
@@ -138,7 +143,7 @@
     }];
     return signal;
 }
-- (RACSignal<RXResult<NSArray< ALiOSSBucket*> *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
+- (RACSignal<QQOSSResult<NSArray< ALiOSSBucket*> *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
     NSMutableArray *signalArray = [NSMutableArray arrayWithCapacity:imageArray.count];
     for (UIImage *image in imageArray) {
         RACSignal *signal = [self putImage:image  bucketName:bucketName endpoint:endpoint path:path];
@@ -146,13 +151,13 @@
     }
     RACSignal *signal = [[RACSignal combineLatest:signalArray] map:^id _Nullable(RACTuple * _Nullable value) {
         NSArray *array = [[value rac_sequence] array];
-        for (RXResult *result  in array) {
+        for (QQOSSResult *result  in array) {
             if (result.error) {
                 return result;
             }
         }
-        RXResult *result = [[RXResult alloc]init];
-        result.Body = [[[array rac_sequence] map:^id _Nullable(RXResult  *value) {
+        QQOSSResult *result = [[QQOSSResult alloc]init];
+        result.Body = [[[array rac_sequence] map:^id _Nullable(QQOSSResult  *value) {
             return value.Body;
         }] array];
         return result;
@@ -160,9 +165,17 @@
     
     return signal;
 }
-- (RACSignal<RXResult<ALiOSSBucket *> *> *)putImage:(UIImage *)image bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
-    if (!self.ossClent) {
-        return []
+- (RACSignal<QQOSSResult<ALiOSSBucket *> *> *)putImage:(UIImage *)image bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
+    if (!self.ossClient) {
+        return [RACSignal  createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            QQOSSResult *result = [[QQOSSResult alloc]init];
+            result.StatusCode = -1;
+            result.StatusMsg = @"阿里云token认证失败";
+            result.error = [NSError errorWithDomain:result.StatusMsg code:-1 userInfo:nil];
+            [subscriber sendNext:result];
+            [subscriber sendCompleted];
+            return nil;
+        }];
     }
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         NSString *filePath = path;
@@ -176,7 +189,7 @@
         OSSPutObjectRequest *request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:filePath imageName:imageName];
         OSSTask *task = [self.ossClient putObject:request];
         [task   continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
-            RXResult *result = [[RXResult alloc]init];
+            QQOSSResult *result = [[QQOSSResult alloc]init];
             if (task.error) {
                 result.error = task.error;
                 result.StatusCode = -1;
