@@ -42,8 +42,16 @@
     }];
 }
 - (IBAction)submit:(UIButton *)sender {
-    NSLog(@"无图片");
+    
+    if (self.image == nil) {
+        NSLog(@"无图片");
+        return;
+    }
     [[[QQOSSImageManager sharedManager] putImage:self.image bucketName:@"common-rxjy" endpoint:@"https://oss-cn-beijing.aliyuncs.com" path:@"test"] subscribeNext:^(QQOSSResult<ALiOSSBucket *> * _Nullable x) {
+        if (x.error) {
+            NSLog(@"%@",x.error);
+            return ;
+        }
         self.urlLabel.text = x.Body.imageURL;
         self.imageURL = x.Body.imageURL;
         NSLog(@"%@",self.imageURL);

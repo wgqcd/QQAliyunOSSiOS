@@ -41,7 +41,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   QQAliyunOSSiOS:
-    :commit: cce4534e8adfa0ee095918c4061f75a1df3abd0d
+    :commit: 5087ca1b4ece5e65a1206ba21dc13a47d8c9206c
     :git: https://github.com/wgqcd/QQAliyunOSSiOS.git
 
 SPEC CHECKSUMS:

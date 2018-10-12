@@ -33,7 +33,7 @@
     if (filePath && ![filePath hasSuffix:@"/"]) {
         filePath = [filePath stringByAppendingString:@"/"];
     }
-    if (!filePath || ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+    if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
         filePath = @"";
     }
     return [NSString stringWithFormat:@"https://%@.%@/%@%@",self.bucketName,endpoint,filePath,self.imageName];
@@ -88,7 +88,7 @@
         if (filePath && ![filePath hasSuffix:@"/"]) {
             filePath = [filePath stringByAppendingString:@"/"];
         }
-        if (!filePath || ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+        if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
             filePath = @"";
         }
         NSMutableArray *taskArray = [NSMutableArray arrayWithCapacity:imageArray.count];
@@ -233,7 +233,7 @@
     if (filePath && ![filePath hasSuffix:@"/"]) {
         filePath = [filePath stringByAppendingString:@"/"];
     }
-    if (!filePath || ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+    if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
         filePath = @"";
     }
     NSAssert(bucketName, @"bucket不能为空");
