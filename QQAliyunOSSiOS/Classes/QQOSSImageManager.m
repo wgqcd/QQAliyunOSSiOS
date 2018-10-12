@@ -11,7 +11,7 @@
 
 #import "QQOSSImageManager.h"
 #import <AliyunOSSiOS/AliyunOSSiOS.h>
-#import <ReactiveObjC/ReactiveObjc.h>
+
 #import <YYModel/YYModel.h>
 @implementation ALiOSSBucket
 - (NSString *)host{
@@ -68,10 +68,19 @@
 @property(nonatomic,strong)NSDateFormatter            *dateFormatter;
 @property(nonatomic,strong)OSSClient            *ossClient;
 @property(nonatomic,strong)ALOSSToken            *token;
+@property(nonatomic,assign)BOOL            enableLog;
 @end
 @implementation QQOSSImageManager
 + (void)enableLog{
     [OSSLog enableLog];
+    [QQOSSImageManager sharedManager].enableLog = YES;
+}
++ (void)load{
+    if ([self isMemberOfClass:[QQOSSImageManager class]]) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [[QQOSSImageManager sharedManager] ossClient];
+        });
+    }
 }
 + (instancetype)sharedManager{
     static QQOSSImageManager *_sharedmanager;
@@ -177,6 +186,10 @@
     return signal;
 }
 - (RACSignal<QQOSSResult<ALiOSSBucket *> *> *)putImage:(UIImage *)image bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
+    if (self.enableLog) {
+         NSLog(@"开始%f",[[NSDate date] timeIntervalSince1970]);
+    }
+    
     if (!self.ossClient) {
         return [RACSignal  createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             QQOSSResult *result = [[QQOSSResult alloc]init];
@@ -190,12 +203,24 @@
             return nil;
         }];
     }
+     if (self.enableLog) {
+        NSLog(@"加载client%f",[[NSDate date] timeIntervalSince1970]);
+     }
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+         if (self.enableLog) {
+            NSLog(@"开始创建任务%f",[[NSDate date] timeIntervalSince1970]);
+         }
         NSString *imageName = [self randomImageName];
         OSSPutObjectRequest *request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:path imageName:imageName];
         OSSTask *task = [self.ossClient putObject:request];
+         if (self.enableLog) {
+            NSLog(@"执行任务%f",[[NSDate date] timeIntervalSince1970]);
+         }
         [task   continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
             QQOSSResult *result = [[QQOSSResult alloc]init];
+             if (self.enableLog) {
+                NSLog(@"结果%f",[[NSDate date] timeIntervalSince1970]);
+             }
             if (task.error) {
                 result.error = task.error;
                 result.StatusCode = -1;
@@ -220,11 +245,15 @@
             [task description];
         }];
     }];
+     if (self.enableLog) {
+        NSLog(@"返回%f",[[NSDate date] timeIntervalSince1970]);
+     }
     return signal;
 }
 
 - (OSSPutObjectRequest*)requestImage:(UIImage *)image bucketName:(NSString*)bucketName endpoint:(NSString*)endpoint path:(NSString*)path imageName:(NSString*)imageName{
-    NSData *data = UIImagePNGRepresentation([self thumbnailForImage:[self fixOrientation:image]  maxPixelSize:1280]) ;
+
+    NSData *data = UIImagePNGRepresentation([self thumbnailForImage:[self fixOrientation:image]  maxPixelSize:720]) ;
     if (endpoint) {
         self.ossClient.endpoint = endpoint;
     }
@@ -245,6 +274,7 @@
     _putRequest.objectKey = [NSString stringWithFormat:@"%@%@",filePath,imageName];
     _putRequest.uploadingData = data;
     _putRequest.isAuthenticationRequired = YES;
+    
     return _putRequest  ;
 }
 - (OSSClient *)ossClient{
