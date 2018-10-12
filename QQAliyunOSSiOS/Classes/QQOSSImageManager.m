@@ -91,7 +91,7 @@
 }
 - (RACSignal<QQOSSResult< ALiOSSBucket *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path1:(NSString *)path{
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-
+        
         NSString *filePath = path;
         if ([filePath hasPrefix:@"/"]) {
             filePath = [filePath substringFromIndex:1];
@@ -207,39 +207,44 @@
         NSLog(@"加载client%f",[[NSDate date] timeIntervalSince1970]);
      }
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-         if (self.enableLog) {
-            NSLog(@"开始创建任务%f",[[NSDate date] timeIntervalSince1970]);
-         }
-        NSString *imageName = [self randomImageName];
-        OSSPutObjectRequest *request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:path imageName:imageName];
-        OSSTask *task = [self.ossClient putObject:request];
-         if (self.enableLog) {
-            NSLog(@"执行任务%f",[[NSDate date] timeIntervalSince1970]);
-         }
-        [task   continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
-            QQOSSResult *result = [[QQOSSResult alloc]init];
-             if (self.enableLog) {
-                NSLog(@"结果%f",[[NSDate date] timeIntervalSince1970]);
-             }
-            if (task.error) {
-                result.error = task.error;
-                result.StatusCode = -1;
-                result.StatusMsg = task.error.domain;
-            }else{
-                ALiOSSBucket *bucket = [[ALiOSSBucket alloc]init];
-                bucket.bucketName = bucketName;
-                bucket.endpoint = endpoint;
-                bucket.path = path;
-                bucket.imageName = imageName;
-                result.StatusMsg = @"上传成功";
-                result.Body =  bucket;
+       __block OSSTask *task;
+        __block OSSPutObjectRequest *request;
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            if (self.enableLog) {
+                NSLog(@"开始创建任务%f",[[NSDate date] timeIntervalSince1970]);
             }
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [subscriber sendNext:result];
-                [subscriber sendCompleted];
-            });
-            return task;
-        }];
+            NSString *imageName = [self randomImageName];
+            request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:path imageName:imageName];
+             task = [self.ossClient putObject:request];
+            if (self.enableLog) {
+                NSLog(@"执行任务%f",[[NSDate date] timeIntervalSince1970]);
+            }
+            [task   continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
+                QQOSSResult *result = [[QQOSSResult alloc]init];
+                if (self.enableLog) {
+                    NSLog(@"结果%f",[[NSDate date] timeIntervalSince1970]);
+                }
+                if (task.error) {
+                    result.error = task.error;
+                    result.StatusCode = -1;
+                    result.StatusMsg = task.error.domain;
+                }else{
+                    ALiOSSBucket *bucket = [[ALiOSSBucket alloc]init];
+                    bucket.bucketName = bucketName;
+                    bucket.endpoint = endpoint;
+                    bucket.path = path;
+                    bucket.imageName = imageName;
+                    result.StatusMsg = @"上传成功";
+                    result.Body =  bucket;
+                }
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [subscriber sendNext:result];
+                    [subscriber sendCompleted];
+                });
+                return task;
+            }];
+        });
+    
         return [RACDisposable disposableWithBlock:^{
             [request cancel];
             [task description];
