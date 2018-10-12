@@ -158,9 +158,7 @@
                 if (!req.isCancelled) {
                     [req cancel];
                 }
-                
             }
-            
             [allTask description];
         }];
     }];

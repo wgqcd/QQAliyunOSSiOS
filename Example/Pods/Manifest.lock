@@ -1,38 +1,19 @@
 PODS:
   - AliyunOSSiOS (2.10.7)
-  - Expecta (1.0.6)
-  - "Expecta+Snapshots (3.1.1)":
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - QQAliyunOSSiOS (0.1.0):
     - AliyunOSSiOS
     - ReactiveObjC
     - YYModel
   - ReactiveObjC (3.1.0)
-  - Specta (1.0.7)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - Expecta
-  - "Expecta+Snapshots"
-  - FBSnapshotTestCase
   - QQAliyunOSSiOS (from `https://github.com/wgqcd/QQAliyunOSSiOS.git`)
-  - Specta
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AliyunOSSiOS
-    - Expecta
-    - "Expecta+Snapshots"
-    - FBSnapshotTestCase
     - ReactiveObjC
-    - Specta
     - YYModel
 
 EXTERNAL SOURCES:
@@ -41,19 +22,15 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   QQAliyunOSSiOS:
-    :commit: daa95e4a72c8da695b1023221b676970f6855148
+    :commit: a9fa1bf9fdd9614baccac6d082b42e512a501526
     :git: https://github.com/wgqcd/QQAliyunOSSiOS.git
 
 SPEC CHECKSUMS:
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
-  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   QQAliyunOSSiOS: 5b3ddac7c71157f30e9e719e333762426f38ad23
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
-  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: fcfab654e88478b3716998cceb07abfb3443a7f0
+PODFILE CHECKSUM: e227c5b6c28b068fb05eff069e7586dbb6f05ea3
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1
