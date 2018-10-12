@@ -242,7 +242,7 @@
     OSSPutObjectRequest  *_putRequest;
     _putRequest = [OSSPutObjectRequest new];
     _putRequest.bucketName = bucketName;
-    _putRequest.objectKey = [NSString stringWithFormat:@"%@%@",path,imageName];
+    _putRequest.objectKey = [NSString stringWithFormat:@"%@%@",filePath,imageName];
     _putRequest.uploadingData = data;
     _putRequest.isAuthenticationRequired = YES;
     return _putRequest  ;

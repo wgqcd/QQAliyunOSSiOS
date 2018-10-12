@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSError            *error;
 @end
 @interface QQOSSImageManager : NSObject
++ (void)enableLog;
 + (instancetype)sharedManager;
 -(NSString*)randomImageName;
 
