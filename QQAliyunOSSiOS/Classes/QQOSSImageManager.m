@@ -91,65 +91,68 @@
 }
 - (RACSignal<QQOSSResult< ALiOSSBucket *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path1:(NSString *)path{
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        
-        NSString *filePath = path;
-        if ([filePath hasPrefix:@"/"]) {
-            filePath = [filePath substringFromIndex:1];
-        }
-        if (filePath && ![filePath hasSuffix:@"/"]) {
-            filePath = [filePath stringByAppendingString:@"/"];
-        }
-        if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
-            filePath = @"";
-        }
-        NSMutableArray *taskArray = [NSMutableArray arrayWithCapacity:imageArray.count];
         NSMutableArray *requestArray = [NSMutableArray arrayWithCapacity:imageArray.count];
-        NSMutableArray *imageNameArray = [NSMutableArray arrayWithCapacity:imageArray.count];
-        NSMutableArray *imageURLArray = [NSMutableArray arrayWithCapacity:imageArray.count];
-        OSSPutObjectRequest *request;
-        OSSTask *task;
-        
-        for (UIImage *image in imageArray) {
-            @autoreleasepool {
-                NSString *imageName = [self randomImageName];
-                request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:filePath imageName:imageName];
-                [requestArray addObject:request];
-                task = [self.ossClient putObject:request];
-                [taskArray addObject:task];
-                [imageNameArray addObject: imageName];
-                NSString *aEndpoint = endpoint;
-                if ([aEndpoint hasPrefix:@"https://"]) {
-                    aEndpoint = [aEndpoint substringFromIndex:8];
-                }
-                NSString *imageURL = [NSString stringWithFormat:@"https://%@.%@/%@%@", bucketName,aEndpoint,filePath,imageName];
-                [imageURLArray addObject:imageURL];
+        __block OSSTask *allTask ;
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSString *filePath = path;
+            if ([filePath hasPrefix:@"/"]) {
+                filePath = [filePath substringFromIndex:1];
             }
+            if (filePath && ![filePath hasSuffix:@"/"]) {
+                filePath = [filePath stringByAppendingString:@"/"];
+            }
+            if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+                filePath = @"";
+            }
+            NSMutableArray *taskArray = [NSMutableArray arrayWithCapacity:imageArray.count];
             
-        }
-        ALiOSSBucket *bucket = [[ALiOSSBucket alloc]init];
-        bucket.bucketName = bucketName;
-        bucket.endpoint = endpoint;
-        bucket.path = path;
-        bucket.imageURLArray = imageURLArray;
-        bucket.imageNameArray = imageNameArray;
-        OSSTask *allTask ;
-        allTask =   [OSSTask taskForCompletionOfAllTasks:taskArray];
-        [allTask continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
-            QQOSSResult *result = [[QQOSSResult alloc]init];
-            if (task.error) {
-                result.error = task.error;
-                result.StatusCode = -1;
-                result.StatusMsg = task.error.domain;
-            }else{
-                result.StatusMsg = @"上传成功";
-                result.Body =  bucket;
+            NSMutableArray *imageNameArray = [NSMutableArray arrayWithCapacity:imageArray.count];
+            NSMutableArray *imageURLArray = [NSMutableArray arrayWithCapacity:imageArray.count];
+            OSSPutObjectRequest *request;
+            OSSTask *task;
+            
+            for (UIImage *image in imageArray) {
+                @autoreleasepool {
+                    NSString *imageName = [self randomImageName];
+                    request = [self requestImage:image bucketName:bucketName endpoint:endpoint path:filePath imageName:imageName];
+                    [requestArray addObject:request];
+                    task = [self.ossClient putObject:request];
+                    [taskArray addObject:task];
+                    [imageNameArray addObject: imageName];
+                    NSString *aEndpoint = endpoint;
+                    if ([aEndpoint hasPrefix:@"https://"]) {
+                        aEndpoint = [aEndpoint substringFromIndex:8];
+                    }
+                    NSString *imageURL = [NSString stringWithFormat:@"https://%@.%@/%@%@", bucketName,aEndpoint,filePath,imageName];
+                    [imageURLArray addObject:imageURL];
+                }
+                
             }
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [subscriber sendNext:result];
-                [subscriber sendCompleted];
-            });
-            return task;
-        }];
+            ALiOSSBucket *bucket = [[ALiOSSBucket alloc]init];
+            bucket.bucketName = bucketName;
+            bucket.endpoint = endpoint;
+            bucket.path = path;
+            bucket.imageURLArray = imageURLArray;
+            bucket.imageNameArray = imageNameArray;
+            
+            allTask =   [OSSTask taskForCompletionOfAllTasks:taskArray];
+            [allTask continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
+                QQOSSResult *result = [[QQOSSResult alloc]init];
+                if (task.error) {
+                    result.error = task.error;
+                    result.StatusCode = -1;
+                    result.StatusMsg = task.error.domain;
+                }else{
+                    result.StatusMsg = @"上传成功";
+                    result.Body =  bucket;
+                }
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [subscriber sendNext:result];
+                    [subscriber sendCompleted];
+                });
+                return task;
+            }];
+        });
         return [RACDisposable disposableWithBlock:^{
             for (OSSRequest *req in requestArray) {
                 if (!req.isCancelled) {
