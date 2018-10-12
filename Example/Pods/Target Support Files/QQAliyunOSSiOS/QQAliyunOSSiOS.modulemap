@@ -1,0 +1,6 @@
+framework module QQAliyunOSSiOS {
+  umbrella header "QQAliyunOSSiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

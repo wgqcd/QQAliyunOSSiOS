@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'QQAliyunOSSiOS_Example' do
+  pod 'QQAliyunOSSiOS', :path => '../'
+
+  target 'QQAliyunOSSiOS_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
