@@ -7,11 +7,12 @@
 //
 
 #import "QQAppDelegate.h"
-
+#import <QQAliyunOSSiOS/QQOSSImageManager.h>
 @implementation QQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [QQOSSImageManager registerServerAddress:@"http://192.168.1.172:7080"];
     // Override point for customization after application launch.
     return YES;
 }
