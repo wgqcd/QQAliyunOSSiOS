@@ -9,6 +9,11 @@
 #import <ReactiveObjC/ReactiveObjc.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef enum : NSUInteger {
+    QQOSSImageCompressFormatJPG,
+    QQOSSImageCompressFormatPNG,
+} QQOSSImageCompressFormat;
 @interface ALiOSSBucket : NSObject
 @property(nonatomic,copy)NSString            *bucketName;
 @property(nonatomic,copy)NSString            *endpoint;
@@ -27,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSError            *error;
 @end
 @interface QQOSSImageManager : NSObject
+@property(nonatomic,assign)QQOSSImageCompressFormat            format;///图片压缩类型 <默认 QQOSSImageCompressFormatJPG
+@property(nonatomic,assign)CGFloat            maxSize; ///<图片宽高最大值 默认  720
 + (void)registerServerAddress:(NSString*)serverAddress;  ///<获取token的接口地址
 + (void)enableLog;
 + (instancetype)sharedManager;

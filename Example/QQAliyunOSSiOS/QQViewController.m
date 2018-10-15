@@ -66,7 +66,7 @@
 - (UIImagePickerController *)picker{
     if (!_picker) {
         _picker = [[UIImagePickerController alloc]init];
-        _picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        _picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         _picker.delegate = self;
     }
     return _picker;

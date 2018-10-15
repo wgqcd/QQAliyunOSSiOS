@@ -82,6 +82,8 @@ static NSString *GET_TOKEN_URL;
     static QQOSSImageManager *_sharedmanager;
     if (!_sharedmanager) {
         _sharedmanager  = [[QQOSSImageManager alloc]init];
+        _sharedmanager.format = QQOSSImageCompressFormatJPG;
+        _sharedmanager.maxSize = 720;
     }
     return _sharedmanager ;
 }
@@ -254,8 +256,14 @@ static NSString *GET_TOKEN_URL;
 }
 
 - (OSSPutObjectRequest*)requestImage:(UIImage *)image bucketName:(NSString*)bucketName endpoint:(NSString*)endpoint path:(NSString*)path imageName:(NSString*)imageName{
+    
+    NSData *data;
+    if (self.format == QQOSSImageCompressFormatJPG) {
+        data = UIImageJPEGRepresentation(image, .51);
+    }else{
+        data = UIImagePNGRepresentation([self thumbnailForImage:[self fixOrientation:image]  maxPixelSize:self.maxSize]) ;
+    }
 
-    NSData *data = UIImagePNGRepresentation([self thumbnailForImage:[self fixOrientation:image]  maxPixelSize:720]) ;
     if (endpoint) {
         self.ossClient.endpoint = endpoint;
     }
@@ -306,6 +314,7 @@ static NSString *GET_TOKEN_URL;
     NSLog(@"随机名：%@",name);
     return name;
 }
+
 - (NSDateFormatter *)dateFormatter  {
     if (!_dateFormatter) {
         _dateFormatter = [[NSDateFormatter alloc]init];
