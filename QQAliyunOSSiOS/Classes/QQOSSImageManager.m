@@ -280,7 +280,7 @@ static NSString *GET_TOKEN_URL;
     return _putRequest  ;
 }
 - (OSSClient *)ossClient{
-    NSAssert(!GET_TOKEN_URL, @"请注册获取token的服务器地址");
+    NSAssert(GET_TOKEN_URL, @"请注册获取token的服务器地址");
     NSDate *date = [self.dateFormatter dateFromString:self.token.Expiration];
     date = [NSDate dateWithTimeInterval:60*60*8 sinceDate:date];
     if (_ossClient == nil || self.token == nil || self.token.Expiration == nil || [date compare:[NSDate date]] ==  NSOrderedAscending) {
