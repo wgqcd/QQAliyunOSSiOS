@@ -6,13 +6,15 @@
 //
 
 
-#define GET_TOKEN_URL  @"http://192.168.1.172:7080"
+//#define GET_TOKEN_URL  @"http://192.168.1.172:7080"
 #define DEFAULT_ENDPOINT @"https://oss-cn-beijing.aliyuncs.com"
 
 #import "QQOSSImageManager.h"
 #import <AliyunOSSiOS/AliyunOSSiOS.h>
 
 #import <YYModel/YYModel.h>
+
+static NSString *GET_TOKEN_URL;
 @implementation ALiOSSBucket
 - (NSString *)host{
     NSString *endpoint = self.endpoint;
@@ -284,6 +286,7 @@
     return _putRequest  ;
 }
 - (OSSClient *)ossClient{
+    NSAssert(!GET_TOKEN_URL, @"请注册获取token的服务器地址");
     NSDate *date = [self.dateFormatter dateFromString:self.token.Expiration];
     date = [NSDate dateWithTimeInterval:60*60*8 sinceDate:date];
     if (_ossClient == nil || self.token == nil || self.token.Expiration == nil || [date compare:[NSDate date]] ==  NSOrderedAscending) {
@@ -391,5 +394,8 @@
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
     return img;
+}
++ (void)registerServerAddress:(NSString *)serverAddress{
+    GET_TOKEN_URL = serverAddress;
 }
 @end

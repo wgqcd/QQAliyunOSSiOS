@@ -77,13 +77,7 @@ static NSString *GET_TOKEN_URL;
     [OSSLog enableLog];
     [QQOSSImageManager sharedManager].enableLog = YES;
 }
-+ (void)load{
- 
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
-            [[QQOSSImageManager sharedManager] ossClient];
-        });
-    
-}
+
 + (instancetype)sharedManager{
     static QQOSSImageManager *_sharedmanager;
     if (!_sharedmanager) {
@@ -397,5 +391,9 @@ static NSString *GET_TOKEN_URL;
 }
 + (void)registerServerAddress:(NSString *)serverAddress{
     GET_TOKEN_URL = serverAddress;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
+        [[QQOSSImageManager sharedManager] ossClient];
+    });
 }
 @end
