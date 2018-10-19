@@ -256,12 +256,12 @@ static NSString *GET_TOKEN_URL;
 }
 
 - (OSSPutObjectRequest*)requestImage:(UIImage *)image bucketName:(NSString*)bucketName endpoint:(NSString*)endpoint path:(NSString*)path imageName:(NSString*)imageName{
-    
+    UIImage *thumbnailImage = [self thumbnailForImage:[self fixOrientation:image]  maxPixelSize:self.maxSize];
     NSData *data;
     if (self.format == QQOSSImageCompressFormatJPG) {
-        data = UIImageJPEGRepresentation(image, .51);
+        data = UIImageJPEGRepresentation(thumbnailImage, .51);
     }else{
-        data = UIImagePNGRepresentation([self thumbnailForImage:[self fixOrientation:image]  maxPixelSize:self.maxSize]) ;
+        data = UIImagePNGRepresentation(thumbnailImage) ;
     }
 
     if (endpoint) {
@@ -310,7 +310,7 @@ static NSString *GET_TOKEN_URL;
 -(NSString*)randomImageName{
     
     NSString *time = [self.dateFormatter stringFromDate:[NSDate date]];
-    NSString *name = [NSString stringWithFormat:@"%@-%u.png",time,arc4random()];
+    NSString *name = [NSString stringWithFormat:@"%@-%u.%@",time,arc4random(),self.format == QQOSSImageCompressFormatJPG ? @"jpg":@"png"];
     NSLog(@"随机名：%@",name);
     return name;
 }

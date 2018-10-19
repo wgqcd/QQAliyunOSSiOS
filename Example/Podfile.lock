@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   QQAliyunOSSiOS:
-    :commit: c999657c86f3a0c44ba4de316c1d6535207b2d9f
+    :commit: 79c62f692f0c974ffdfa8f796bbc877124f1c7fd
     :git: https://github.com/wgqcd/QQAliyunOSSiOS.git
 
 SPEC CHECKSUMS:
@@ -33,4 +33,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e227c5b6c28b068fb05eff069e7586dbb6f05ea3
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3

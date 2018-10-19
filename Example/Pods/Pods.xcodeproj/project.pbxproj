@@ -30,7 +30,7 @@
 		0B58DAB90A615157D702D1559F10B469 /* RACQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = C2643524EE053EAB3F4B96A2A232B36B /* RACQueueScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B7A0431A3DD60DB8F3D8285DFAF5C0C /* NSUserDefaults+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0692193FA9B82C4B24D516EACEA73D9D /* NSUserDefaults+RACSupport.m */; };
 		0D9D14206FD7BD4B239894AA254B8B3C /* OSSURLRequestRetryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 931ADE7788442FB28448A5B6391D5584 /* OSSURLRequestRetryHandler.m */; };
-		0E090C3A66C5271381B41B70C1CF20A1 /* AliyunOSSiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD8653457839CEE43DF6D2F483B2C79 /* AliyunOSSiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E090C3A66C5271381B41B70C1CF20A1 /* AliyunOSSiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E28A9064949FD833D1979C92FA3974DA /* AliyunOSSiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E37881993769AF0A5BA4663BC3D4B02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B45920074E744CDC6F1E2A1EA9AD14 /* SystemConfiguration.framework */; };
 		0E604477625B266385A51BF2CCEE6AB1 /* RACImmediateScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0777D4C6A67E3FA9B9CD398949178EFA /* RACImmediateScheduler.m */; };
 		0ED8FBD1A840DA07169887793C9B0CE7 /* RACCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F919A30F8B01B727768873DBED51C6 /* RACCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,7 +39,7 @@
 		131D96AF2AA1055C66EC9320384E238A /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA3D644A941E6BADDDD0865174300F3 /* YYModel.framework */; };
 		13DFF83784706887E0D3BF13885506B0 /* OSSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8BA0C4CC6EA77A3F2D130A887073F7 /* OSSNetworking.m */; };
 		13E7FD6D500B5B5148A11DEB301FBCD5 /* UIDatePicker+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 960744B59C3D9BC110EE8EFBBD8E21BD /* UIDatePicker+RACSignalSupport.m */; };
-		14554CAEA733722920BE33CA11CA42AC /* Pods-QQAliyunOSSiOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C4F51F5501BDE0899F82AFFCB9243 /* Pods-QQAliyunOSSiOS_Tests-dummy.m */; };
+		14554CAEA733722920BE33CA11CA42AC /* Pods-QQAliyunOSSiOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3422077C4A698583AC06464E6A292C2 /* Pods-QQAliyunOSSiOS_Tests-dummy.m */; };
 		16109D7822F98DDFCE8A215C3673243F /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 204130555F13FCA3DA2E65BC498301BC /* RACValueTransformer.m */; };
 		18583DADD6E5316DFA602F293D8CF0C0 /* NSObject+RACDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = F8390578889E4CC84AC0F88730056CC3 /* NSObject+RACDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1ABF27BDC21879CB649405EF57A53255 /* NSArray+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 513390F22EF23F2C54003B38835935E4 /* NSArray+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,7 +53,7 @@
 		20025A9DEC0429A29323535C37CF9F11 /* RACEmptySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A60951BC12B443EFDE1E07A8A30BF3 /* RACEmptySequence.m */; };
 		2152CD6CE7BFCBC00C424178DB0E4EFA /* UIButton+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C774CA96C1833CDA5ABAF2215EEF1 /* UIButton+RACCommandSupport.m */; };
 		21AEE9BBDB4D741A455AA929EA452F9C /* NSEnumerator+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AACB1434B3DC897233048C06D3905D7 /* NSEnumerator+RACSequenceAdditions.m */; };
-		220A74D5516C37ED1A8E72CB1CDD8649 /* ReactiveObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D462F9CA1A8520BFDC731391D077F43 /* ReactiveObjC-dummy.m */; };
+		220A74D5516C37ED1A8E72CB1CDD8649 /* ReactiveObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EF556556B1126DE8E97AFE0982B6B /* ReactiveObjC-dummy.m */; };
 		220CB6DEB82150F53C3217CF6FF392D3 /* RACmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C4A3503162CA453CDEEE7661D278DE /* RACmetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221595A4C7E5FB479EB190EC6DCE798C /* aos_crc64.c in Sources */ = {isa = PBXBuildFile; fileRef = 451B39BA29CE09B00776F602A44FB7E6 /* aos_crc64.c */; };
 		222775DEC21F12760D40A003879F714A /* OSSIPv6PrefixResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED26CFB591998F124A62ACA771B0C5D /* OSSIPv6PrefixResolver.m */; };
@@ -140,10 +140,10 @@
 		69C07FE3D9AE2CE45E75348464FB29E0 /* OSSGetSymlinkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B447C5174875B238225E201F1155BD7B /* OSSGetSymlinkRequest.m */; };
 		6BAE5B7692A339E21EE974E8E34CC9D7 /* RACStream+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 00EC87C0E9066B6D760CCD3725C5F1D4 /* RACStream+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6C5BC1E76BB85928E554CAC4512EC7E7 /* ReactiveObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = ADEFC6BEC1D09549DB842D25309ACCFD /* ReactiveObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D366C0672531CC31BFD1392BB079A9A /* ReactiveObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7FC0FCAE3B8494FCC4D16D579B445A /* ReactiveObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D366C0672531CC31BFD1392BB079A9A /* ReactiveObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DB1AF75B2F24AD7AC02D64B731CFF7 /* ReactiveObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBF22858222BE1B3CC6F2860DEEC06F /* RACCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E19CD28A276F2ABF2FF381B5AD3D24 /* RACCompoundDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EF69EDD05D32BF0CF62D2A2678B90DD /* OSSResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E24CD63FBA23F75018EE8D2D894EABC4 /* OSSResult.m */; };
-		6F2F85D43ECEACDAEEEFFE8D3F249066 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E68CAD6546C0DD09FA50B605D780C0E /* YYModel-dummy.m */; };
+		6F2F85D43ECEACDAEEEFFE8D3F249066 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 269941E18E0E55EE5D664A4D20D16AC6 /* YYModel-dummy.m */; };
 		6F97FCF3FA19E56F40334D949A8F6C7D /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 524E4E84782F030E9D52B7876E40D8BC /* UITableViewHeaderFooterView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FCE67525A04A799EF7436D0FCADA26A /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF3E1A9945FAE90C4554D6869EF0194 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7035BB5274DA8355E6097D4AD316CFD6 /* OSSTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B610A4B5EF17471E1489D7B76023F4 /* OSSTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,7 +160,7 @@
 		75B7C0AE9D4C2B0EAB20EE97BE7A961B /* RACEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EB8905E75E7BB306790043E3CD198D /* RACEXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		769274E4DC799967DD8DE7EB40C560A4 /* OSSGetSymlinkResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F73F37F6D88D4AE4FBEEC7DD0D34A89 /* OSSGetSymlinkResult.m */; };
 		76DE368F14CB816A0A1BFB87E468035B /* OSSCancellationTokenSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EA416D1567DB2C3ACC8FFA3F131531 /* OSSCancellationTokenSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78B3F59675FB3ACD48650F36748F2B07 /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 236A0BD16E059C9F489F85772EB894F1 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78B3F59675FB3ACD48650F36748F2B07 /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F43359B8975BB051CAA8E02CEC34F3 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79030117E63335EA89D69EDBF84C8710 /* NSIndexSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61AA11D3775CBCA173E14D83C338312 /* NSIndexSet+RACSequenceAdditions.m */; };
 		7977CC12A09B8CB4DDFD60AA67CAA90F /* aos_crc64.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FABD80DFA6D8B3054BB9AF467EFEF8 /* aos_crc64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A78F4143B652DBB9CAB8E3C5AAFCA9F /* UITableViewCell+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2896697AB782116F5E8D81F3BE7566A0 /* UITableViewCell+RACSignalSupport.m */; };
@@ -207,7 +207,7 @@
 		9511A73B0FCFFA22C2299B9E1ED91575 /* NSObject+RACKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 316722DC58A33C67275972F5E75616EE /* NSObject+RACKVOWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95DB66F17A15D8181CFD3529F45D9328 /* RACReplaySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B349DEF0205936976B0F0D89BB4D9 /* RACReplaySubject.m */; };
 		96927B13EF3EF8D23AA96B22D10609A2 /* OSSCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 152ED44E9AFE16D5B1E3D5FB0D1D5D36 /* OSSCancellationToken.m */; };
-		96FCD7316E13BB93708C536B5FF6D0D3 /* QQAliyunOSSiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A951CF6DCF250A4AF1F8127C53F0632 /* QQAliyunOSSiOS-dummy.m */; };
+		96FCD7316E13BB93708C536B5FF6D0D3 /* QQAliyunOSSiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC3232EA9037E7557B34A670E2A9AD8 /* QQAliyunOSSiOS-dummy.m */; };
 		971DD845E3ED100EEFF3EBB7E7883C29 /* OSSNetworkingRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D0D7EB831D8A6C0572C1D3318F747A /* OSSNetworkingRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9827C45748BA3FE84D22280F5A8F5C3E /* NSObject+RACPropertySubscribing.h in Headers */ = {isa = PBXBuildFile; fileRef = E088DEAA6F25E8453903AA9791595CFF /* NSObject+RACPropertySubscribing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99F84E836D02C1E78651530FEC5EF5AB /* NSMutableData+OSS_CRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7509DC16F0A17DA45437140EC254B17B /* NSMutableData+OSS_CRC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -216,7 +216,7 @@
 		9FA04CE593140FEAF6B2D7A97372FAC9 /* RACDynamicSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A40A90769C9CC4DE684D8E4BFC866 /* RACDynamicSignal.m */; };
 		A0746A4FF05BAF142F7A54A58387F82C /* RACScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E3397777DBCA7771AC1EAF40A7AB52 /* RACScheduler.m */; };
 		A0BFC96004B39890F92F71A7AB74B712 /* RACSerialDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 93EA6C59C3776AEFAA4A4ADC93F31C2A /* RACSerialDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A16C59DE108FC9B0EEE236B022895E92 /* Pods-QQAliyunOSSiOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A21B47FAA375F1A1486AE01A97D6325 /* Pods-QQAliyunOSSiOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16C59DE108FC9B0EEE236B022895E92 /* Pods-QQAliyunOSSiOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC5438EB2CD366A5C3813536D91CB0F /* Pods-QQAliyunOSSiOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2B24E2104F2BF2B743E560546ED5F2F /* RACScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = B330E17DE997D09F142FD8112C87C335 /* RACScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A31A668C01FDD56FA63262A623D2D2F1 /* RACTargetQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC53BBAF856B8D0725C5B31D3B63B39 /* RACTargetQueueScheduler.m */; };
 		A5094B1AEE1D0EBA402B78F6802E56FF /* OSSAllRequestNeededMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BC83A88702B03372DDBAA9A63FC0CE /* OSSAllRequestNeededMessage.m */; };
@@ -272,7 +272,7 @@
 		D0FE1B499F818E5C6AB51AF2E620CE38 /* RACDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B93DD693BD22F4F5D752667D910C76 /* RACDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D15536CE3A1144671E45D9453DD765FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB66A9DC90349B63A4D401E4BF81AC0 /* Foundation.framework */; };
 		D1B66FC20A30F63366C17EF3427C456B /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 365C6C79BEC33500025D7EEFDEA3B90F /* NSString+RACSupport.m */; };
-		D42EFD88831ED0DDF856F94EAD345210 /* QQAliyunOSSiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4010523D6546E72D00D08C85A8B668A5 /* QQAliyunOSSiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D42EFD88831ED0DDF856F94EAD345210 /* QQAliyunOSSiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F27E855914394FC0D21AA2125FD730DD /* QQAliyunOSSiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4362091BEA300BE3F40F50615342F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB66A9DC90349B63A4D401E4BF81AC0 /* Foundation.framework */; };
 		D4C7940535B26E91AD7A0774CFF1C482 /* RACBlockTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 365BADC8A1F01F2F4073D5B338E1DF1A /* RACBlockTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D528FF9B9648AF1D13B2ACBA1F071978 /* OSSFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC9AF4717DF7B63B5C04A71273478CB /* OSSFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -294,11 +294,11 @@
 		E0D652C03B271DD3744B81E78319D478 /* RACSerialDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 753359FB32966EEC5DD933ED8C63B5AF /* RACSerialDisposable.m */; };
 		E0E84A20C5818041D04A015EE6ACE478 /* RACEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = E3322FF67FF2E829F681D7B869DFFAA3 /* RACEXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2CB974151693FBA05BC6C124B1D3F25 /* RACTupleSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC780FDA8E29C2D55725C63622EE3A /* RACTupleSequence.m */; };
-		E3630F9C324BEB693EBC8146EF96D1B7 /* Pods-QQAliyunOSSiOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFC970B0131E1B14E3D3F36269CBC44 /* Pods-QQAliyunOSSiOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3630F9C324BEB693EBC8146EF96D1B7 /* Pods-QQAliyunOSSiOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9617135B8C43E96B956002E12589CAA1 /* Pods-QQAliyunOSSiOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4D9D8B05246A5A1615D2A9A0775130D /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = F41FB9F4BD4F27EE19EE498E64DD1150 /* RACSignalSequence.m */; };
 		E5DAB945C38EB3967D76E006BCE7E0D7 /* OSSGetObjectACLResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 345A6D010EDA19B4BAE921E013ABA7C9 /* OSSGetObjectACLResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E67A3665D590EBAF1B591BC18DEFDEF2 /* OSSGetBucketInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC87AB1AF3E95B26A02C682E12D482B /* OSSGetBucketInfoRequest.m */; };
-		E8446886E9BE06E85FA4BBC025468ACE /* Pods-QQAliyunOSSiOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D74C143590F5E8A703183FF1A16C3F /* Pods-QQAliyunOSSiOS_Example-dummy.m */; };
+		E8446886E9BE06E85FA4BBC025468ACE /* Pods-QQAliyunOSSiOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 504FD7E110A1A03E4A403D01E581EA18 /* Pods-QQAliyunOSSiOS_Example-dummy.m */; };
 		E8EF39356F612B69E5CD85BA21F670E1 /* RACArraySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5EB8EF162ECDC1642A1C104F7D5824 /* RACArraySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E92D49B9B9E69FEDBDD00CFBA5CE06A4 /* RACScopedDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 91329F6411746BDC7EEA565715BB6081 /* RACScopedDisposable.m */; };
 		E9820E3580D03BF82DF2F1D8FE25902B /* RACReturnSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6F9AD6476E774C21F06CFF145F4 /* RACReturnSignal.m */; };
@@ -320,7 +320,7 @@
 		F83E4C145F75386B65F7EB8A4C24B529 /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 089E3A14ADF8CE0BDCF5B574B1509C09 /* RACSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8413A4ED4193C61028E4F42CE5F7445 /* OSSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3264046195210406592D227E0A744 /* OSSConstants.m */; };
 		F8DF68D4C65D3A345373717F0E498201 /* RACSubscriptionScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = A2167A600CF15CA27518834DA8FA7F67 /* RACSubscriptionScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC593B2C4F4634F3CF99F9F5714F2014 /* AliyunOSSiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E93C4C9F9CAC4A00AEA8FD6261BE0 /* AliyunOSSiOS-dummy.m */; };
+		FC593B2C4F4634F3CF99F9F5714F2014 /* AliyunOSSiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F5852DAEC84539F1E4E97AE8F6AC /* AliyunOSSiOS-dummy.m */; };
 		FC917D1C88FB875FF1EBEA8092AA1845 /* RACChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6973D8F60E54A87DC66CDEA87A0E36B2 /* RACChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE48E06DCCE5BB98FA4A8690DF0954BA /* OSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 90006C4622DCA3760468B903D38186FA /* OSSClient.m */; };
 		FE65FB1A582B122ECA88A2748BC120A7 /* RACKVOTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = A83E1A43C20FD28A88B1B438403EFE35 /* RACKVOTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -389,7 +389,8 @@
 		00BD990DDE65CC498A26728D741E77A8 /* RACEXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTRuntimeExtensions.h; path = ReactiveObjC/extobjc/RACEXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		00D0D7EB831D8A6C0572C1D3318F747A /* OSSNetworkingRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSNetworkingRequestDelegate.h; path = AliyunOSSSDK/OSSNetworkingRequestDelegate.h; sourceTree = "<group>"; };
 		00EC87C0E9066B6D760CCD3725C5F1D4 /* RACStream+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACStream+Private.h"; path = "ReactiveObjC/RACStream+Private.h"; sourceTree = "<group>"; };
-		02B4741C656570FFA7173955EA69134B /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		012735A4D29EACDA7B5713648BDB065C /* Pods-QQAliyunOSSiOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QQAliyunOSSiOS_Tests.modulemap"; sourceTree = "<group>"; };
+		0211881586EB67EA3A665D4B24940AB6 /* ReactiveObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-prefix.pch"; sourceTree = "<group>"; };
 		039F3DBAE003642FD745ED9D217DF38D /* RACSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptingAssignmentTrampoline.m; path = ReactiveObjC/RACSubscriptingAssignmentTrampoline.m; sourceTree = "<group>"; };
 		03B93DD693BD22F4F5D752667D910C76 /* RACDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDisposable.h; path = ReactiveObjC/RACDisposable.h; sourceTree = "<group>"; };
 		03D3264046195210406592D227E0A744 /* OSSConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSConstants.m; path = AliyunOSSSDK/OSSConstants.m; sourceTree = "<group>"; };
@@ -398,6 +399,7 @@
 		04B07203720999AA453187ED8BE7267D /* RACSignal+Operations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSignal+Operations.h"; path = "ReactiveObjC/RACSignal+Operations.h"; sourceTree = "<group>"; };
 		04D8A29955ACDAB2D8D9F195048B6E1B /* RACDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDelegateProxy.h; path = ReactiveObjC/RACDelegateProxy.h; sourceTree = "<group>"; };
 		04F88514F239FF3AE2F746E1FDE883D3 /* OSSTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSTaskCompletionSource.m; path = AliyunOSSSDK/OSSTask/OSSTaskCompletionSource.m; sourceTree = "<group>"; };
+		05A206CA4556A2791AFC33E8C3623393 /* AliyunOSSiOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AliyunOSSiOS.xcconfig; sourceTree = "<group>"; };
 		05AB63E858C14D8DE93F21ADA8B353D2 /* NSOrderedSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSOrderedSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		0692193FA9B82C4B24D516EACEA73D9D /* NSUserDefaults+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+RACSupport.m"; path = "ReactiveObjC/NSUserDefaults+RACSupport.m"; sourceTree = "<group>"; };
 		06C809BC4C348ADE9187815181A31C19 /* RACEagerSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEagerSequence.h; path = ReactiveObjC/RACEagerSequence.h; sourceTree = "<group>"; };
@@ -405,7 +407,9 @@
 		0809B85F6E8C1376DD1FD6981CB90AF3 /* UISegmentedControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+RACSignalSupport.h"; path = "ReactiveObjC/UISegmentedControl+RACSignalSupport.h"; sourceTree = "<group>"; };
 		0824300C6CCFCCDCC1060AFDB35FEA38 /* OSSUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSUtil.h; path = AliyunOSSSDK/OSSUtil.h; sourceTree = "<group>"; };
 		089E3A14ADF8CE0BDCF5B574B1509C09 /* RACSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriber.h; path = ReactiveObjC/RACSubscriber.h; sourceTree = "<group>"; };
-		0A2E93C4C9F9CAC4A00AEA8FD6261BE0 /* AliyunOSSiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AliyunOSSiOS-dummy.m"; sourceTree = "<group>"; };
+		0A18268A53CD3720381721486245700F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B15AC4F15E361DD2128A62AC31DB33F /* Pods-QQAliyunOSSiOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QQAliyunOSSiOS_Example-resources.sh"; sourceTree = "<group>"; };
+		0C1EF556556B1126DE8E97AFE0982B6B /* ReactiveObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveObjC-dummy.m"; sourceTree = "<group>"; };
 		0D4C89DE220728EF3F717D2514FBD7B8 /* NSSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+RACSequenceAdditions.m"; path = "ReactiveObjC/NSSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		10858C9ABD71B9B8B23780ED470AC300 /* RACEmptySignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySignal.m; path = ReactiveObjC/RACEmptySignal.m; sourceTree = "<group>"; };
 		10ED2C9A4A71D156948C616ACC777C58 /* RACMulticastConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACMulticastConnection.m; path = ReactiveObjC/RACMulticastConnection.m; sourceTree = "<group>"; };
@@ -434,28 +438,26 @@
 		22395BE4E8C5B1D8B2BF4BC85D7EDF2A /* OSSGetSymlinkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSGetSymlinkRequest.h; path = AliyunOSSSDK/OSSGetSymlinkRequest.h; sourceTree = "<group>"; };
 		22CCC6BE2C02BFD82DD4E24CD8DFB427 /* OSSNSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSNSLogger.h; path = AliyunOSSSDK/OSSFileLog/OSSNSLogger.h; sourceTree = "<group>"; };
 		22D1EB6791092A773C6E976C5EB6C8B3 /* OSSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSModel.h; path = AliyunOSSSDK/OSSModel.h; sourceTree = "<group>"; };
-		236A0BD16E059C9F489F85772EB894F1 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
 		23F28593C9255A33D4F249858FA5DC1A /* OSSGetObjectACLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSGetObjectACLRequest.h; path = AliyunOSSSDK/OSSGetObjectACLRequest.h; sourceTree = "<group>"; };
 		2427EF0C9B939C117739355984290409 /* RACSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriber.m; path = ReactiveObjC/RACSubscriber.m; sourceTree = "<group>"; };
-		256281556D3F14591571904878DF6FC8 /* Pods-QQAliyunOSSiOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QQAliyunOSSiOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2447FD7065CD8AD188D140CBA763E7CD /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QQAliyunOSSiOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2610EC107290520369E2C7FD308AB04F /* UICollectionReusableView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionReusableView+RACSignalSupport.m"; path = "ReactiveObjC/UICollectionReusableView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		262252101EC73A01D378796FEAED4C4B /* OSSCocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSCocoaLumberjack.h; path = AliyunOSSSDK/OSSFileLog/OSSCocoaLumberjack.h; sourceTree = "<group>"; };
 		26602A9886B85390F0B99C01E5DDB64C /* UIGestureRecognizer+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+RACSignalSupport.h"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.h"; sourceTree = "<group>"; };
+		269941E18E0E55EE5D664A4D20D16AC6 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
 		2727812B56A334643844B9CAEC78A627 /* UIGestureRecognizer+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+RACSignalSupport.m"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.m"; sourceTree = "<group>"; };
 		273F5D14F976734C37B9F1D29A9453C3 /* RACUnarySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnarySequence.h; path = ReactiveObjC/RACUnarySequence.h; sourceTree = "<group>"; };
 		2896697AB782116F5E8D81F3BE7566A0 /* UITableViewCell+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+RACSignalSupport.m"; path = "ReactiveObjC/UITableViewCell+RACSignalSupport.m"; sourceTree = "<group>"; };
 		2A51D5953A96FFB041D3327D23A0C8D3 /* RACSubscriber+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSubscriber+Private.h"; path = "ReactiveObjC/RACSubscriber+Private.h"; sourceTree = "<group>"; };
 		2BBD61E46A551FD3D9C7CB49AA3029A8 /* UIBarButtonItem+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+RACCommandSupport.m"; path = "ReactiveObjC/UIBarButtonItem+RACCommandSupport.m"; sourceTree = "<group>"; };
+		2C9BE7C46069B0039A817E35F060D446 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DB031FA3D138E37B4E856062A721B6A /* UITextField+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RACSignalSupport.h"; path = "ReactiveObjC/UITextField+RACSignalSupport.h"; sourceTree = "<group>"; };
 		2E2E015FB3DCD507732D7C5B50902204 /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveObjC.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FE7438A5A2C1EECA421E4CFB408B9EB /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
 		2FFAB4DDB875B3AC50FAFA16301502CE /* NSUserDefaults+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+RACSupport.h"; path = "ReactiveObjC/NSUserDefaults+RACSupport.h"; sourceTree = "<group>"; };
 		30B610A4B5EF17471E1489D7B76023F4 /* OSSTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSTask.h; path = AliyunOSSSDK/OSSTask/OSSTask.h; sourceTree = "<group>"; };
 		316722DC58A33C67275972F5E75616EE /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveObjC/NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
-		31E49ACEF65B4FFA964FFD2475EC016E /* Pods-QQAliyunOSSiOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QQAliyunOSSiOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		32505219DBA792EF0AAD3A10DDC83917 /* UISwitch+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISwitch+RACSignalSupport.h"; path = "ReactiveObjC/UISwitch+RACSignalSupport.h"; sourceTree = "<group>"; };
 		33D6E3A0A621869D9D834278357260D7 /* RACKVOTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOTrampoline.m; path = ReactiveObjC/RACKVOTrampoline.m; sourceTree = "<group>"; };
-		34395D89BF29EE4DFFABFAAC5A71A70F /* QQAliyunOSSiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QQAliyunOSSiOS.modulemap; sourceTree = "<group>"; };
 		345A6D010EDA19B4BAE921E013ABA7C9 /* OSSGetObjectACLResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSGetObjectACLResult.h; path = AliyunOSSSDK/OSSGetObjectACLResult.h; sourceTree = "<group>"; };
 		34A30EB9E50BF87255CBE8306C6A6996 /* OSSInputStreamHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSInputStreamHelper.m; path = AliyunOSSSDK/OSSInputStreamHelper.m; sourceTree = "<group>"; };
 		35190BA8892D1B77DC0614DAB85F866E /* RACScheduler+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Private.h"; path = "ReactiveObjC/RACScheduler+Private.h"; sourceTree = "<group>"; };
@@ -463,9 +465,10 @@
 		35BC83A88702B03372DDBAA9A63FC0CE /* OSSAllRequestNeededMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSAllRequestNeededMessage.m; path = AliyunOSSSDK/OSSAllRequestNeededMessage.m; sourceTree = "<group>"; };
 		365BADC8A1F01F2F4073D5B338E1DF1A /* RACBlockTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBlockTrampoline.h; path = ReactiveObjC/RACBlockTrampoline.h; sourceTree = "<group>"; };
 		365C6C79BEC33500025D7EEFDEA3B90F /* NSString+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSupport.m"; path = "ReactiveObjC/NSString+RACSupport.m"; sourceTree = "<group>"; };
+		3758E709D9D14608FAF92DE03AEC3F88 /* QQAliyunOSSiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QQAliyunOSSiOS-prefix.pch"; sourceTree = "<group>"; };
 		383326D7FD4385DAD18AA8FBC26ABEBA /* NSObject+RACSelectorSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACSelectorSignal.h"; path = "ReactiveObjC/NSObject+RACSelectorSignal.h"; sourceTree = "<group>"; };
 		38BB9AF7F4B2DD8A5C8057FFD5CF89F4 /* UIControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RACSignalSupport.m"; path = "ReactiveObjC/UIControl+RACSignalSupport.m"; sourceTree = "<group>"; };
-		3A21B47FAA375F1A1486AE01A97D6325 /* Pods-QQAliyunOSSiOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QQAliyunOSSiOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3AB84FE19988FA2CAE42A122EEEF605F /* ReactiveObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveObjC.xcconfig; sourceTree = "<group>"; };
 		3AC8F791AF2F3D34C285351B68CD914A /* NSMutableDictionary+OSS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+OSS.m"; path = "AliyunOSSSDK/NSMutableDictionary+OSS.m"; sourceTree = "<group>"; };
 		3BC53BBAF856B8D0725C5B31D3B63B39 /* RACTargetQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTargetQueueScheduler.m; path = ReactiveObjC/RACTargetQueueScheduler.m; sourceTree = "<group>"; };
 		3C5EB8EF162ECDC1642A1C104F7D5824 /* RACArraySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACArraySequence.h; path = ReactiveObjC/RACArraySequence.h; sourceTree = "<group>"; };
@@ -476,35 +479,34 @@
 		3D7C49F283426F51C9C78CE7AF43DACE /* OSSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSModel.m; path = AliyunOSSSDK/OSSModel.m; sourceTree = "<group>"; };
 		3F787F8B38F755C68B37EDAAAD336293 /* RACDynamicSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSequence.h; path = ReactiveObjC/RACDynamicSequence.h; sourceTree = "<group>"; };
 		3F902FF13375070275392AB6D23041E3 /* UISegmentedControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+RACSignalSupport.m"; path = "ReactiveObjC/UISegmentedControl+RACSignalSupport.m"; sourceTree = "<group>"; };
-		4010523D6546E72D00D08C85A8B668A5 /* QQAliyunOSSiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QQAliyunOSSiOS-umbrella.h"; sourceTree = "<group>"; };
-		404724C7DD8FECD2AABB63E64A1D7000 /* QQAliyunOSSiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QQAliyunOSSiOS-Info.plist"; sourceTree = "<group>"; };
-		410D5FD6CE25F61E6BF2AE68667D59DA /* Pods-QQAliyunOSSiOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4115F8A92084F334E9DEEDF43FB5C4DA /* UIAlertView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RACSignalSupport.m"; path = "ReactiveObjC/UIAlertView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		41FDF9D6F6181B47FBCC200080016EFB /* Pods-QQAliyunOSSiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QQAliyunOSSiOS_Example.modulemap"; sourceTree = "<group>"; };
+		42CE7E071A2B3D3E0A5F38B1A4294FBC /* QQAliyunOSSiOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QQAliyunOSSiOS.xcconfig; sourceTree = "<group>"; };
 		4386F389B427D8E254395F91AA5A174E /* RACQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACQueueScheduler.m; path = ReactiveObjC/RACQueueScheduler.m; sourceTree = "<group>"; };
 		4390C91AF6B6E695C6B7795C8DE7B0E3 /* NSInvocation+RACTypeParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+RACTypeParsing.h"; path = "ReactiveObjC/NSInvocation+RACTypeParsing.h"; sourceTree = "<group>"; };
 		44C6F2A409683A042289C3FE578356E7 /* RACGroupedSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACGroupedSignal.h; path = ReactiveObjC/RACGroupedSignal.h; sourceTree = "<group>"; };
 		451B39BA29CE09B00776F602A44FB7E6 /* aos_crc64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aos_crc64.c; path = AliyunOSSSDK/aos_crc64.c; sourceTree = "<group>"; };
+		477742BE132F22CB9E93A0B8279F4463 /* AliyunOSSiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AliyunOSSiOS-prefix.pch"; sourceTree = "<group>"; };
 		47C30E5C50AC6AFAD8D56A24E8C8DA20 /* RACMulticastConnection+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACMulticastConnection+Private.h"; path = "ReactiveObjC/RACMulticastConnection+Private.h"; sourceTree = "<group>"; };
 		47F919A30F8B01B727768873DBED51C6 /* RACCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCommand.h; path = ReactiveObjC/RACCommand.h; sourceTree = "<group>"; };
-		48399E97214FBC543667EFC3484725D8 /* Pods-QQAliyunOSSiOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QQAliyunOSSiOS_Example-Info.plist"; sourceTree = "<group>"; };
 		48DC71E5862732497FBF6B0A1601BE0C /* OSSCancellationTokenRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSCancellationTokenRegistration.h; path = AliyunOSSSDK/OSSTask/OSSCancellationTokenRegistration.h; sourceTree = "<group>"; };
-		495832A2D137356C4DAF5BB21319A91B /* AliyunOSSiOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AliyunOSSiOS.xcconfig; sourceTree = "<group>"; };
 		4964C6765B78C24B83A14C315122A357 /* OSSCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSCompat.m; path = AliyunOSSSDK/OSSCompat.m; sourceTree = "<group>"; };
 		4A8BA0C4CC6EA77A3F2D130A887073F7 /* OSSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSNetworking.m; path = AliyunOSSSDK/OSSNetworking.m; sourceTree = "<group>"; };
+		4AC5438EB2CD366A5C3813536D91CB0F /* Pods-QQAliyunOSSiOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QQAliyunOSSiOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4B03D970EE1720656549917F9C121492 /* RACReplaySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReplaySubject.h; path = ReactiveObjC/RACReplaySubject.h; sourceTree = "<group>"; };
-		4B0A29D4D8C82FFFB3A94625BC087A22 /* Pods-QQAliyunOSSiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QQAliyunOSSiOS_Example.modulemap"; sourceTree = "<group>"; };
 		4BC9AF4717DF7B63B5C04A71273478CB /* OSSFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSFileLogger.h; path = AliyunOSSSDK/OSSFileLog/OSSFileLogger.h; sourceTree = "<group>"; };
 		4C89C6C13F38D930D9D283C833EE74DA /* OSSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSNetworking.h; path = AliyunOSSSDK/OSSNetworking.h; sourceTree = "<group>"; };
 		4CF8C94F260DAE30B9F84A19B5B1A8C2 /* RACCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCommand.m; path = ReactiveObjC/RACCommand.m; sourceTree = "<group>"; };
 		4D062E1C32889B1B9D5D287D2F6EC9EE /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		4DE505792641273980677DDD6EEFB16F /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = ReactiveObjC/RACArraySequence.m; sourceTree = "<group>"; };
+		4E9F16506617174FE935BE87312932E5 /* Pods-QQAliyunOSSiOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QQAliyunOSSiOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4EC87AB1AF3E95B26A02C682E12D482B /* OSSGetBucketInfoRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSGetBucketInfoRequest.m; path = AliyunOSSSDK/OSSGetBucketInfoRequest.m; sourceTree = "<group>"; };
 		4F7712AD5A27468FF6958A065E9BBB24 /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+RACSignalSupport.h"; path = "ReactiveObjC/UITextView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		504FD7E110A1A03E4A403D01E581EA18 /* Pods-QQAliyunOSSiOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QQAliyunOSSiOS_Example-dummy.m"; sourceTree = "<group>"; };
 		505DA6F9AD6476E774C21F06CFF145F4 /* RACReturnSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReturnSignal.m; path = ReactiveObjC/RACReturnSignal.m; sourceTree = "<group>"; };
 		513390F22EF23F2C54003B38835935E4 /* NSArray+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RACSequenceAdditions.h"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		522B070CC21098546ABB513136283EB8 /* RACSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubject.h; path = ReactiveObjC/RACSubject.h; sourceTree = "<group>"; };
 		524E4E84782F030E9D52B7876E40D8BC /* UITableViewHeaderFooterView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewHeaderFooterView+RACSignalSupport.h"; path = "ReactiveObjC/UITableViewHeaderFooterView+RACSignalSupport.h"; sourceTree = "<group>"; };
-		52C8605C82F782ABA8C1AF82341CC66E /* ReactiveObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReactiveObjC-Info.plist"; sourceTree = "<group>"; };
 		52CFD9E811652E2826618B6ADC8EF78A /* OSSRestoreObjectResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSRestoreObjectResult.m; path = AliyunOSSSDK/OSSRestoreObjectResult.m; sourceTree = "<group>"; };
 		53641B9C4C5D983E98B3B116C4E51243 /* OSSPutSymlinkResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSPutSymlinkResult.m; path = AliyunOSSSDK/OSSPutSymlinkResult.m; sourceTree = "<group>"; };
 		53858F65001203E1C547E00D8AE120B7 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
@@ -513,11 +515,11 @@
 		567E9EE89D805595754629C3351EE3BD /* OSSReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSReachabilityManager.h; path = AliyunOSSSDK/OSSIPv6/OSSReachabilityManager.h; sourceTree = "<group>"; };
 		56E0D5E56C223EB11957CF9C841A2CF4 /* RACTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTuple.m; path = ReactiveObjC/RACTuple.m; sourceTree = "<group>"; };
 		575D6D6BECD0183848E4D6E7B4A9330F /* NSDictionary+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RACSequenceAdditions.h"; path = "ReactiveObjC/NSDictionary+RACSequenceAdditions.h"; sourceTree = "<group>"; };
-		57D74C143590F5E8A703183FF1A16C3F /* Pods-QQAliyunOSSiOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QQAliyunOSSiOS_Example-dummy.m"; sourceTree = "<group>"; };
 		58EB8905E75E7BB306790043E3CD198D /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTKeyPathCoding.h; path = ReactiveObjC/extobjc/RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
 		593BE690106C727486E63E1BB9FC0C7B /* RACErrorSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACErrorSignal.h; path = ReactiveObjC/RACErrorSignal.h; sourceTree = "<group>"; };
 		5A69A332F8C2F9AE9073517F4D69842E /* UITableViewHeaderFooterView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewHeaderFooterView+RACSignalSupport.m"; path = "ReactiveObjC/UITableViewHeaderFooterView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		5A9DBF79ED699C68BEFE5C83EED02B5B /* OSSNSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSNSLogger.m; path = AliyunOSSSDK/OSSFileLog/OSSNSLogger.m; sourceTree = "<group>"; };
+		5B34C898B2F20A20CCF67C919F0E4D6B /* Pods-QQAliyunOSSiOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QQAliyunOSSiOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5CD6EAE51A43435F520F484643F9E1EB /* OSSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSClient.h; path = AliyunOSSSDK/OSSClient.h; sourceTree = "<group>"; };
 		5CE943F28C5F7D06159D8BA75C700FF1 /* RACKVOProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOProxy.h; path = ReactiveObjC/RACKVOProxy.h; sourceTree = "<group>"; };
 		5CF57B57E453B29CA4CF95E15E01C9F1 /* RACScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Subclass.h"; path = "ReactiveObjC/RACScheduler+Subclass.h"; sourceTree = "<group>"; };
@@ -527,17 +529,17 @@
 		5E0D6FB8A96287DF4F5C1600F51CC7DE /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveObjC/RACStringSequence.m; sourceTree = "<group>"; };
 		5F73F37F6D88D4AE4FBEEC7DD0D34A89 /* OSSGetSymlinkResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSGetSymlinkResult.m; path = AliyunOSSSDK/OSSGetSymlinkResult.m; sourceTree = "<group>"; };
 		65293425D6676421190F3544B426641E /* OSSReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSReachability.h; path = AliyunOSSSDK/OSSFileLog/OSSReachability.h; sourceTree = "<group>"; };
+		66C5F5852DAEC84539F1E4E97AE8F6AC /* AliyunOSSiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AliyunOSSiOS-dummy.m"; sourceTree = "<group>"; };
 		675BF62B59F374CB8BAECE43DC04F897 /* RACKVOChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOChannel.m; path = ReactiveObjC/RACKVOChannel.m; sourceTree = "<group>"; };
-		68E734746C1594FC411DA94347956822 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6961E0D4F0FEE88B7476277232BE4A5D /* NSInvocation+RACTypeParsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+RACTypeParsing.m"; path = "ReactiveObjC/NSInvocation+RACTypeParsing.m"; sourceTree = "<group>"; };
 		6973D8F60E54A87DC66CDEA87A0E36B2 /* RACChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACChannel.h; path = ReactiveObjC/RACChannel.h; sourceTree = "<group>"; };
 		6AA9B8173F436E0F3BD8DDCAF0FEBD6D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		6AACB1434B3DC897233048C06D3905D7 /* NSEnumerator+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEnumerator+RACSequenceAdditions.m"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		6B2780930BDD93D80DA5E94371FA25C7 /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveObjC/NSString+RACSupport.h"; sourceTree = "<group>"; };
-		6D462F9CA1A8520BFDC731391D077F43 /* ReactiveObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveObjC-dummy.m"; sourceTree = "<group>"; };
 		6F8C4D6B3502A81A0DEECCD52B4FCFCA /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		70C574E4C46C2C2C24DF595D0AEE41D8 /* NSObject+RACSelectorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACSelectorSignal.m"; path = "ReactiveObjC/NSObject+RACSelectorSignal.m"; sourceTree = "<group>"; };
 		7212BC80D3F3C93897E35E54823E1BFA /* RACDynamicSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSignal.h; path = ReactiveObjC/RACDynamicSignal.h; sourceTree = "<group>"; };
+		724B6090CF55EAFB468F18345FB99852 /* ReactiveObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveObjC.modulemap; sourceTree = "<group>"; };
 		73728AA8A4D1CED7EE882F80DB42A063 /* NSIndexSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSIndexSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		73EB069A10CE35C936C850F700C55503 /* QQAliyunOSSiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QQAliyunOSSiOS.framework; path = QQAliyunOSSiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B1B85BE3EC31C634D94739BB5D950 /* UIButton+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RACCommandSupport.h"; path = "ReactiveObjC/UIButton+RACCommandSupport.h"; sourceTree = "<group>"; };
@@ -546,20 +548,20 @@
 		75777C32344656C38207D69360E31F87 /* OSSPutSymlinkResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSPutSymlinkResult.h; path = AliyunOSSSDK/OSSPutSymlinkResult.h; sourceTree = "<group>"; };
 		7804DC8C00ED735D8CE15B6D5DD1E3F4 /* OSSXMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSXMLDictionary.m; path = AliyunOSSSDK/OSSXMLDictionary.m; sourceTree = "<group>"; };
 		780A307D1ABE6DCDF26C805E0A0D6AF6 /* OSSPutSymlinkRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSPutSymlinkRequest.m; path = AliyunOSSSDK/OSSPutSymlinkRequest.m; sourceTree = "<group>"; };
+		784C67F452FA8B6EDA36D757E7D4F99A /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
 		79EE93A03AC1A173AA1AA3980371AE26 /* OSSURLRequestRetryHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSURLRequestRetryHandler.h; path = AliyunOSSSDK/OSSURLRequestRetryHandler.h; sourceTree = "<group>"; };
-		79FA91D1F8603F7FD2A428B52F57002B /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QQAliyunOSSiOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7CCAA0899E5E486E591CA7B63968E456 /* OSSTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSTaskCompletionSource.h; path = AliyunOSSSDK/OSSTask/OSSTaskCompletionSource.h; sourceTree = "<group>"; };
 		7DD9352A5FB5C3BE0A6F60220B5E35E1 /* NSObject+RACDeallocating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDeallocating.m"; path = "ReactiveObjC/NSObject+RACDeallocating.m"; sourceTree = "<group>"; };
 		8001276478569EF2FC898319AA20D0B1 /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = ReactiveObjC/RACCompoundDisposable.m; sourceTree = "<group>"; };
 		8105A2A65AF7D9EDEB29614C70A04360 /* RACPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACPassthroughSubscriber.h; path = ReactiveObjC/RACPassthroughSubscriber.h; sourceTree = "<group>"; };
+		811B696ABAC8E27CA1A1CB00E8F84690 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		819D471D1BA335F8E520F5D3AEA22715 /* OSSNetworkingRequestDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSNetworkingRequestDelegate.m; path = AliyunOSSSDK/OSSNetworkingRequestDelegate.m; sourceTree = "<group>"; };
 		82B160B0A0B1B3DDAAF0C9D8F13DFBE0 /* RACBlockTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBlockTrampoline.m; path = ReactiveObjC/RACBlockTrampoline.m; sourceTree = "<group>"; };
-		82DCEA4C3A54846B4AFEE02D0136B055 /* ReactiveObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-prefix.pch"; sourceTree = "<group>"; };
 		8534414A5554236EDFC130ED35585E37 /* RACEmptySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySequence.h; path = ReactiveObjC/RACEmptySequence.h; sourceTree = "<group>"; };
 		85C4A3503162CA453CDEEE7661D278DE /* RACmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACmetamacros.h; path = ReactiveObjC/extobjc/RACmetamacros.h; sourceTree = "<group>"; };
+		863AF249B098E032D1058FEB7314A23E /* QQAliyunOSSiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QQAliyunOSSiOS.modulemap; sourceTree = "<group>"; };
 		86448318BD709AA410CD4449EED60385 /* RACEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEXTRuntimeExtensions.m; path = ReactiveObjC/extobjc/RACEXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		866E67A867D875EF13DC3A3A123A00D4 /* NSOrderedSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+RACSequenceAdditions.m"; path = "ReactiveObjC/NSOrderedSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
-		86A479FE4FD6AB664F6B7FA93505A881 /* YYModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYModel-Info.plist"; sourceTree = "<group>"; };
 		888352EA0D3A7AAF9F4810FD5549EBC6 /* RACEagerSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEagerSequence.m; path = ReactiveObjC/RACEagerSequence.m; sourceTree = "<group>"; };
 		8954C52881966EAD83DE93D597A57D8F /* OSSGetObjectACLRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSGetObjectACLRequest.m; path = AliyunOSSSDK/OSSGetObjectACLRequest.m; sourceTree = "<group>"; };
 		8AA5E91A63E5D229754871EE5999FD12 /* RACSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSequence.h; path = ReactiveObjC/RACSequence.h; sourceTree = "<group>"; };
@@ -567,37 +569,39 @@
 		8B88B379AC89145F2BD847685BDE80A1 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
 		8BD8BD7CBCDDE93DBE319860E02F9DD5 /* OSSRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSRequest.m; path = AliyunOSSSDK/OSSRequest.m; sourceTree = "<group>"; };
 		8D9E863BAD1EDFC97ECC0EA9CB0CBDC0 /* OSSDeleteMultipleObjectsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSDeleteMultipleObjectsResult.h; path = AliyunOSSSDK/OSSDeleteMultipleObjectsResult.h; sourceTree = "<group>"; };
+		8E55539140E347A363BDD5340B7D4F1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED26CFB591998F124A62ACA771B0C5D /* OSSIPv6PrefixResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSIPv6PrefixResolver.m; path = AliyunOSSSDK/OSSIPv6/OSSIPv6PrefixResolver.m; sourceTree = "<group>"; };
 		8FAEC1E961BAC1AEA20EC56DAAA9C253 /* RACEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEvent.m; path = ReactiveObjC/RACEvent.m; sourceTree = "<group>"; };
 		8FF63DE1BA0945C7CF919F984B97E2B9 /* RACBehaviorSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBehaviorSubject.h; path = ReactiveObjC/RACBehaviorSubject.h; sourceTree = "<group>"; };
 		90006C4622DCA3760468B903D38186FA /* OSSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSClient.m; path = AliyunOSSSDK/OSSClient.m; sourceTree = "<group>"; };
 		910A796CC567A225054ED42FAC5BE855 /* RACBehaviorSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBehaviorSubject.m; path = ReactiveObjC/RACBehaviorSubject.m; sourceTree = "<group>"; };
+		910C31C1C8F07990EC48570ACB53BC85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91329F6411746BDC7EEA565715BB6081 /* RACScopedDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScopedDisposable.m; path = ReactiveObjC/RACScopedDisposable.m; sourceTree = "<group>"; };
-		926CBA71F9EE99CBE451419F04767E57 /* AliyunOSSiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AliyunOSSiOS.modulemap; sourceTree = "<group>"; };
 		931ADE7788442FB28448A5B6391D5584 /* OSSURLRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSURLRequestRetryHandler.m; path = AliyunOSSSDK/OSSURLRequestRetryHandler.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93EA6C59C3776AEFAA4A4ADC93F31C2A /* RACSerialDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSerialDisposable.h; path = ReactiveObjC/RACSerialDisposable.h; sourceTree = "<group>"; };
+		949A378AA266EA4C708563C9852D5739 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9555A6DC91C83B0F1A62282CCC4EE9EE /* RACSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptingAssignmentTrampoline.h; path = ReactiveObjC/RACSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
-		95B4301B8ED5F0E317495AFA7184AAEA /* QQAliyunOSSiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QQAliyunOSSiOS-prefix.pch"; sourceTree = "<group>"; };
 		95F69300FA9273913335C91FFB275551 /* NSString+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSequenceAdditions.m"; path = "ReactiveObjC/NSString+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		960744B59C3D9BC110EE8EFBBD8E21BD /* UIDatePicker+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDatePicker+RACSignalSupport.m"; path = "ReactiveObjC/UIDatePicker+RACSignalSupport.m"; sourceTree = "<group>"; };
+		9617135B8C43E96B956002E12589CAA1 /* Pods-QQAliyunOSSiOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QQAliyunOSSiOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		962BB0A2C668AD675766CD26285D2A93 /* UICollectionReusableView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionReusableView+RACSignalSupport.h"; path = "ReactiveObjC/UICollectionReusableView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		96CD4799EB966A18BB08C5C8C72AEB96 /* OSSXMLDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSXMLDictionary.h; path = AliyunOSSSDK/OSSXMLDictionary.h; sourceTree = "<group>"; };
-		979C4F51F5501BDE0899F82AFFCB9243 /* Pods-QQAliyunOSSiOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QQAliyunOSSiOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		97D39DD908C17263411B3DB540C34ADB /* RACTargetQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTargetQueueScheduler.h; path = ReactiveObjC/RACTargetQueueScheduler.h; sourceTree = "<group>"; };
-		9A951CF6DCF250A4AF1F8127C53F0632 /* QQAliyunOSSiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QQAliyunOSSiOS-dummy.m"; sourceTree = "<group>"; };
+		98DB1AF75B2F24AD7AC02D64B731CFF7 /* ReactiveObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-umbrella.h"; sourceTree = "<group>"; };
 		9AB63A34F2072E763C2426A2A2EE987E /* UIStepper+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStepper+RACSignalSupport.h"; path = "ReactiveObjC/UIStepper+RACSignalSupport.h"; sourceTree = "<group>"; };
 		9AF28B77CF927E3668FD95970955DE7A /* RACKVOChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOChannel.h; path = ReactiveObjC/RACKVOChannel.h; sourceTree = "<group>"; };
 		9B03FF354A6EAFA0A9E3D7E3F2949887 /* OSSHttpResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSHttpResponseParser.m; path = AliyunOSSSDK/OSSHttpResponseParser.m; sourceTree = "<group>"; };
+		9BE907D321FBE15D256E493E1E75C2CC /* Pods-QQAliyunOSSiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9C15209C3A4CEEE5F3F9EFFE70AC535E /* OSSRestoreObjectRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSRestoreObjectRequest.m; path = AliyunOSSSDK/OSSRestoreObjectRequest.m; sourceTree = "<group>"; };
-		9D30B3429AAFF0B0290E16AB08C3F57C /* AliyunOSSiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AliyunOSSiOS-prefix.pch"; sourceTree = "<group>"; };
+		9CABEE9AF6804FE9276ABFFAF15DF124 /* AliyunOSSiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AliyunOSSiOS.modulemap; sourceTree = "<group>"; };
 		9D7380516D9ACF06123258F53A897187 /* RACUnarySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnarySequence.m; path = ReactiveObjC/RACUnarySequence.m; sourceTree = "<group>"; };
 		9DB71A375F9CF12515C64771DD670BDB /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = ReactiveObjC/RACDelegateProxy.m; sourceTree = "<group>"; };
-		9E68CAD6546C0DD09FA50B605D780C0E /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
 		9EC48956F0C328C05E9845352F2E121C /* RACUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnit.m; path = ReactiveObjC/RACUnit.m; sourceTree = "<group>"; };
 		9F4B667D7BC5586AF579ECC9245E43FF /* RACIndexSetSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACIndexSetSequence.m; path = ReactiveObjC/RACIndexSetSequence.m; sourceTree = "<group>"; };
 		9FD54A3DBAE18DFA85A06CD0D01FF2C3 /* OSSAllRequestNeededMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSAllRequestNeededMessage.h; path = AliyunOSSSDK/OSSAllRequestNeededMessage.h; sourceTree = "<group>"; };
 		A092616B9E7EBB03A0665751C944A388 /* NSMutableData+OSS_CRC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableData+OSS_CRC.m"; path = "AliyunOSSSDK/NSMutableData+OSS_CRC.m"; sourceTree = "<group>"; };
+		A16BA38021D0CCA2B8DC8D0E1BB336AF /* Pods-QQAliyunOSSiOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QQAliyunOSSiOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A1E3397777DBCA7771AC1EAF40A7AB52 /* RACScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScheduler.m; path = ReactiveObjC/RACScheduler.m; sourceTree = "<group>"; };
 		A2167A600CF15CA27518834DA8FA7F67 /* RACSubscriptionScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptionScheduler.h; path = ReactiveObjC/RACSubscriptionScheduler.h; sourceTree = "<group>"; };
 		A2C627BAAEA07F1995D8D3FF7B972986 /* RACEmptySignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySignal.h; path = ReactiveObjC/RACEmptySignal.h; sourceTree = "<group>"; };
@@ -616,6 +620,7 @@
 		ABB5CCA6CF92CEF8A9378E6E54A8ADA7 /* NSSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		AC959FF0CDB761B7CFC39E6460F6633F /* RACValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACValueTransformer.h; path = ReactiveObjC/RACValueTransformer.h; sourceTree = "<group>"; };
 		ADEFC6BEC1D09549DB842D25309ACCFD /* ReactiveObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveObjC.h; path = ReactiveObjC/ReactiveObjC.h; sourceTree = "<group>"; };
+		B17C2C09C12C6E313B6F110C24C38ACC /* Pods-QQAliyunOSSiOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QQAliyunOSSiOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B1A734EC1621871F1392E1D158478818 /* NSURLConnection+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+RACSupport.m"; path = "ReactiveObjC/NSURLConnection+RACSupport.m"; sourceTree = "<group>"; };
 		B2121FA3A504C7706B0EDCD6ABCD0DD1 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
 		B28188112B7357EEAADDDA92E7EC7A33 /* NSObject+RACLifting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACLifting.m"; path = "ReactiveObjC/NSObject+RACLifting.m"; sourceTree = "<group>"; };
@@ -623,23 +628,22 @@
 		B330E17DE997D09F142FD8112C87C335 /* RACScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScheduler.h; path = ReactiveObjC/RACScheduler.h; sourceTree = "<group>"; };
 		B34A1C28D1B107109EB355CF7CB3EE43 /* RACScopedDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScopedDisposable.h; path = ReactiveObjC/RACScopedDisposable.h; sourceTree = "<group>"; };
 		B35A40A90769C9CC4DE684D8E4BFC866 /* RACDynamicSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSignal.m; path = ReactiveObjC/RACDynamicSignal.m; sourceTree = "<group>"; };
+		B35D68434C1DF85CDCA0A3CAB9396503 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		B3DA436588B5A01A451D2B20CD6C03F1 /* Pods-QQAliyunOSSiOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B447C5174875B238225E201F1155BD7B /* OSSGetSymlinkRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSGetSymlinkRequest.m; path = AliyunOSSSDK/OSSGetSymlinkRequest.m; sourceTree = "<group>"; };
-		B537807C38895A515694B5DB44C86BDD /* AliyunOSSiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AliyunOSSiOS-Info.plist"; sourceTree = "<group>"; };
-		B70EBE9661FB59572632EC41A1FBDF70 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		B512CD6CAA3C2B4C4BA51747AA39301E /* Pods-QQAliyunOSSiOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B8CBE669683AAA3B8E97683DEBAB725F /* OSSCancellationTokenSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSCancellationTokenSource.m; path = AliyunOSSSDK/OSSTask/OSSCancellationTokenSource.m; sourceTree = "<group>"; };
 		B948D759AE14AB87BE8D233DDDB40275 /* NSFileHandle+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileHandle+RACSupport.h"; path = "ReactiveObjC/NSFileHandle+RACSupport.h"; sourceTree = "<group>"; };
 		B9739BF3FB26AAA50FB1526C94684BFF /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		B9A67723A7599081069D208816D311FB /* RACErrorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACErrorSignal.m; path = ReactiveObjC/RACErrorSignal.m; sourceTree = "<group>"; };
 		BA5EB6E536100F73E70BB0F1488C0710 /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RACSignalSupport.m"; path = "ReactiveObjC/UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
+		BAC3232EA9037E7557B34A670E2A9AD8 /* QQAliyunOSSiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QQAliyunOSSiOS-dummy.m"; sourceTree = "<group>"; };
 		BB281222E7D6D5A4D4C78B36999C417F /* OSSCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSCompat.h; path = AliyunOSSSDK/OSSCompat.h; sourceTree = "<group>"; };
-		BCD8653457839CEE43DF6D2F483B2C79 /* AliyunOSSiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AliyunOSSiOS-umbrella.h"; sourceTree = "<group>"; };
-		BCEC27FE49F3A44548B2874F364F936B /* Pods-QQAliyunOSSiOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QQAliyunOSSiOS_Tests-Info.plist"; sourceTree = "<group>"; };
 		BD70E3DD31F93375D9A97C6F8E7E7EEF /* UIRefreshControl+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+RACCommandSupport.m"; path = "ReactiveObjC/UIRefreshControl+RACCommandSupport.m"; sourceTree = "<group>"; };
 		C0A95331067762A0821DB76A64C24D16 /* RACStringSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStringSequence.h; path = ReactiveObjC/RACStringSequence.h; sourceTree = "<group>"; };
 		C0C607CE4AB2E59E11718BB848D3E947 /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1830CF34E3ECF33DF135CFE7C1151D9 /* UIDatePicker+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDatePicker+RACSignalSupport.h"; path = "ReactiveObjC/UIDatePicker+RACSignalSupport.h"; sourceTree = "<group>"; };
 		C2643524EE053EAB3F4B96A2A232B36B /* RACQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACQueueScheduler.h; path = ReactiveObjC/RACQueueScheduler.h; sourceTree = "<group>"; };
-		C26DF2CDDE0EF9B809E24CFCAC763DCE /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QQAliyunOSSiOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C28FC23945E4761CB23835FD3F537236 /* OSSCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSCancellationTokenRegistration.m; path = AliyunOSSSDK/OSSTask/OSSCancellationTokenRegistration.m; sourceTree = "<group>"; };
 		C3F36170E6EA55F69BA1BE86BB0D4035 /* NSData+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RACSupport.m"; path = "ReactiveObjC/NSData+RACSupport.m"; sourceTree = "<group>"; };
 		C42B936D9300690AA4DFDB0A46F20D03 /* OSSGetBucketInfoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSGetBucketInfoRequest.h; path = AliyunOSSSDK/OSSGetBucketInfoRequest.h; sourceTree = "<group>"; };
@@ -648,37 +652,39 @@
 		C4E2687298583A84757AA9179536F07C /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
 		C57B86D62879E2B04ED714C70F5B1509 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AliyunOSSiOS.framework; path = AliyunOSSiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B009DAD068A81D7526A21C53667948 /* OSSDeleteMultipleObjectsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSDeleteMultipleObjectsRequest.h; path = AliyunOSSSDK/OSSDeleteMultipleObjectsRequest.h; sourceTree = "<group>"; };
+		C5F43359B8975BB051CAA8E02CEC34F3 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
 		C6B4DCD2597A13EC538850D8854D79E8 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
 		C79028C6D5965737102DD7CABE82D9F9 /* UISlider+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+RACSignalSupport.h"; path = "ReactiveObjC/UISlider+RACSignalSupport.h"; sourceTree = "<group>"; };
 		C7EA416D1567DB2C3ACC8FFA3F131531 /* OSSCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSCancellationTokenSource.h; path = AliyunOSSSDK/OSSTask/OSSCancellationTokenSource.h; sourceTree = "<group>"; };
 		C7FB88DC731A6CA75AEF36AD212CDAB0 /* OSSHttpResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSHttpResponseParser.h; path = AliyunOSSSDK/OSSHttpResponseParser.h; sourceTree = "<group>"; };
+		C89A2BC790B73EC1D35F520941DC79F7 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
 		C8A65B3ABDE5B2EAC2FB06531061239B /* OSSLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSLog.m; path = AliyunOSSSDK/OSSLog.m; sourceTree = "<group>"; };
 		C90E1177FBBC9C511E6552F2F29C75ED /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
 		CA79CEFEB788253CA9C788A94B31C54B /* RACUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnit.h; path = ReactiveObjC/RACUnit.h; sourceTree = "<group>"; };
 		CBA0319B1CC786FBED4AE9442396CB35 /* UIImagePickerController+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+RACSignalSupport.h"; path = "ReactiveObjC/UIImagePickerController+RACSignalSupport.h"; sourceTree = "<group>"; };
 		CC48840D9049F57C39E3EE8443CE293A /* OSSFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSFileLogger.m; path = AliyunOSSSDK/OSSFileLog/OSSFileLogger.m; sourceTree = "<group>"; };
-		CDB23367E597A683E3EA02D3577F8DEB /* ReactiveObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveObjC.xcconfig; sourceTree = "<group>"; };
 		CF0925310237042195ED9653599F469A /* RACQueueScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACQueueScheduler+Subclass.h"; path = "ReactiveObjC/RACQueueScheduler+Subclass.h"; sourceTree = "<group>"; };
+		CF9E86E0622FB0392D85C1BAF056AD42 /* Pods-QQAliyunOSSiOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QQAliyunOSSiOS_Tests-resources.sh"; sourceTree = "<group>"; };
 		CFA6B4055893D069F404E29464DC1113 /* OSSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSConstants.h; path = AliyunOSSSDK/OSSConstants.h; sourceTree = "<group>"; };
 		CFC75CC4ED1BE477700C2190051E094E /* OSSGetBucketInfoResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSGetBucketInfoResult.h; path = AliyunOSSSDK/OSSGetBucketInfoResult.h; sourceTree = "<group>"; };
 		CFE8415F785695FDC60C422A8A6DA0AB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		D01E2D2F516BADDFB1903A8ECF3882A5 /* QQOSSImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QQOSSImageManager.m; path = QQAliyunOSSiOS/Classes/QQOSSImageManager.m; sourceTree = "<group>"; };
 		D08A27AEE8BCF7B22AC78E84FCC6DC1F /* RACStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStream.m; path = ReactiveObjC/RACStream.m; sourceTree = "<group>"; };
-		D0E1D1208349FA8F785731CCED37534F /* ReactiveObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveObjC.modulemap; sourceTree = "<group>"; };
 		D1D1965C6FE0F94BEAB5BF0B9A4615A1 /* NSDate+OSS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+OSS.h"; path = "AliyunOSSSDK/NSDate+OSS.h"; sourceTree = "<group>"; };
 		D2E2902C433E523187974E71636EC700 /* UIAlertView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+RACSignalSupport.h"; path = "ReactiveObjC/UIAlertView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		D32B349DEF0205936976B0F0D89BB4D9 /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveObjC/RACReplaySubject.m; sourceTree = "<group>"; };
-		D3E487E069A0C07B0F9E8B40C1788C6F /* Pods-QQAliyunOSSiOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3422077C4A698583AC06464E6A292C2 /* Pods-QQAliyunOSSiOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QQAliyunOSSiOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		D40AF66B0CDF7BBA97A8FDF282756522 /* RACKVOProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOProxy.m; path = ReactiveObjC/RACKVOProxy.m; sourceTree = "<group>"; };
 		D4B4B8B476EB85D1736EEC6A1E05BF30 /* Pods_QQAliyunOSSiOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QQAliyunOSSiOS_Example.framework; path = "Pods-QQAliyunOSSiOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D502D0ACC354E2560AB8038D0CBBC25C /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+RACSignalSupport.m"; path = "ReactiveObjC/UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		D515022304B219F7218465EECA3C9ED4 /* MKAnnotationView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+RACSignalSupport.h"; path = "ReactiveObjC/MKAnnotationView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		D5EA3D986AAD504FF983E6DD297A99FF /* OSSRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSRequest.h; path = AliyunOSSSDK/OSSRequest.h; sourceTree = "<group>"; };
+		D61770AE8301B5AF3611EB0986D37B2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67F637EF6A2BF97C7E9F576DC0F9C6A /* UISlider+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISlider+RACSignalSupport.m"; path = "ReactiveObjC/UISlider+RACSignalSupport.m"; sourceTree = "<group>"; };
 		D76BF1D0BBC8CE82F6F3764404BB95F3 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AliyunOSSiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79A25B4CC88EE46FC8B24CE1CF4F3C8 /* OSSPutSymlinkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSPutSymlinkRequest.h; path = AliyunOSSSDK/OSSPutSymlinkRequest.h; sourceTree = "<group>"; };
 		D8129CF05D0D2AC3EAE15BEB42FB2282 /* NSData+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RACSupport.h"; path = "ReactiveObjC/NSData+RACSupport.h"; sourceTree = "<group>"; };
-		DA1967B4353D09A9FE5EFAC5F1E2A724 /* QQAliyunOSSiOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QQAliyunOSSiOS.xcconfig; sourceTree = "<group>"; };
+		DB0AAAD9C7850D8B5DF7EB1EF54CC83E /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QQAliyunOSSiOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB1FB425A8FEE9E173173AFFBE535141 /* OSSHttpdns.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSHttpdns.h; path = AliyunOSSSDK/OSSHttpdns.h; sourceTree = "<group>"; };
 		DB466E77DAD1675D42B0EE46E67B7E88 /* RACGroupedSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACGroupedSignal.m; path = ReactiveObjC/RACGroupedSignal.m; sourceTree = "<group>"; };
 		DB6C6FBA0D263449B2790678590D31C7 /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACKVOWrapper.m"; path = "ReactiveObjC/NSObject+RACKVOWrapper.m"; sourceTree = "<group>"; };
@@ -690,6 +696,7 @@
 		E088DEAA6F25E8453903AA9791595CFF /* NSObject+RACPropertySubscribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACPropertySubscribing.h"; path = "ReactiveObjC/NSObject+RACPropertySubscribing.h"; sourceTree = "<group>"; };
 		E0FAB378BC6BD2246E7D64E234DA5B7C /* OSSExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSExecutor.m; path = AliyunOSSSDK/OSSTask/OSSExecutor.m; sourceTree = "<group>"; };
 		E24CD63FBA23F75018EE8D2D894EABC4 /* OSSResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSResult.m; path = AliyunOSSSDK/OSSResult.m; sourceTree = "<group>"; };
+		E28A9064949FD833D1979C92FA3974DA /* AliyunOSSiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AliyunOSSiOS-umbrella.h"; sourceTree = "<group>"; };
 		E3322FF67FF2E829F681D7B869DFFAA3 /* RACEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTScope.h; path = ReactiveObjC/extobjc/RACEXTScope.h; sourceTree = "<group>"; };
 		E38D19ECE19AEB33638A72C855183138 /* RACReturnSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReturnSignal.h; path = ReactiveObjC/RACReturnSignal.h; sourceTree = "<group>"; };
 		E3E105038B4B6B1BDC6A33956121A2DF /* RACSignalSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignalSequence.h; path = ReactiveObjC/RACSignalSequence.h; sourceTree = "<group>"; };
@@ -703,21 +710,18 @@
 		EAEF30E00E559A1F55068896A3ECEAB1 /* NSString+RACKeyPathUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACKeyPathUtilities.h"; path = "ReactiveObjC/NSString+RACKeyPathUtilities.h"; sourceTree = "<group>"; };
 		EC093EF7FDC8162E111F8C253FC3EA91 /* OSSDDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSDDLog.h; path = AliyunOSSSDK/OSSFileLog/OSSDDLog.h; sourceTree = "<group>"; };
 		EC29B76E2C57A272FF345ED28F05F5C9 /* OSSRestoreObjectResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSRestoreObjectResult.h; path = AliyunOSSSDK/OSSRestoreObjectResult.h; sourceTree = "<group>"; };
-		ED7FC0FCAE3B8494FCC4D16D579B445A /* ReactiveObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-umbrella.h"; sourceTree = "<group>"; };
 		EE72FA4F0B57392FDF180C90DB78E47D /* RACTestScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTestScheduler.m; path = ReactiveObjC/RACTestScheduler.m; sourceTree = "<group>"; };
 		EEBE8506784D6A7F59DAF41DD4B05080 /* RACSubscriptionScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptionScheduler.m; path = ReactiveObjC/RACSubscriptionScheduler.m; sourceTree = "<group>"; };
 		EF5365F58388A99BAD2047ACA19ED3C0 /* MKAnnotationView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+RACSignalSupport.m"; path = "ReactiveObjC/MKAnnotationView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		EFA3D644A941E6BADDDD0865174300F3 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FABD80DFA6D8B3054BB9AF467EFEF8 /* aos_crc64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aos_crc64.h; path = AliyunOSSSDK/aos_crc64.h; sourceTree = "<group>"; };
-		F1EC02D10CFCA3819939073DEEAA6FD2 /* Pods-QQAliyunOSSiOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QQAliyunOSSiOS_Tests.modulemap"; sourceTree = "<group>"; };
 		F278FE4888339FA8A5FDA6E967C07F0E /* OSSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSService.h; path = AliyunOSSSDK/OSSService.h; sourceTree = "<group>"; };
+		F27E855914394FC0D21AA2125FD730DD /* QQAliyunOSSiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QQAliyunOSSiOS-umbrella.h"; sourceTree = "<group>"; };
 		F283343574768B4932DDC3BA87C22BAB /* OSSTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSTask.m; path = AliyunOSSSDK/OSSTask/OSSTask.m; sourceTree = "<group>"; };
 		F2ECB3388310249440CE926EED51E485 /* RACIndexSetSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACIndexSetSequence.h; path = ReactiveObjC/RACIndexSetSequence.h; sourceTree = "<group>"; };
 		F41FB9F4BD4F27EE19EE498E64DD1150 /* RACSignalSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignalSequence.m; path = ReactiveObjC/RACSignalSequence.m; sourceTree = "<group>"; };
-		F5D198CD2C392066835E7E3400DA7716 /* Pods-QQAliyunOSSiOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QQAliyunOSSiOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F6025E0875AE24E72FEFC5FBE6BD0825 /* OSSLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSLog.h; path = AliyunOSSSDK/OSSLog.h; sourceTree = "<group>"; };
 		F61AA11D3775CBCA173E14D83C338312 /* NSIndexSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+RACSequenceAdditions.m"; path = "ReactiveObjC/NSIndexSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
-		F6F125939027389352B55E4C8E86BDD2 /* Pods-QQAliyunOSSiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QQAliyunOSSiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F8390578889E4CC84AC0F88730056CC3 /* NSObject+RACDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDescription.h"; path = "ReactiveObjC/NSObject+RACDescription.h"; sourceTree = "<group>"; };
 		F86FD74BE36F091F25159595F62DCE37 /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveObjC/UIControl+RACSignalSupport.h"; sourceTree = "<group>"; };
 		F8A60951BC12B443EFDE1E07A8A30BF3 /* RACEmptySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySequence.m; path = ReactiveObjC/RACEmptySequence.m; sourceTree = "<group>"; };
@@ -728,7 +732,6 @@
 		FCA0A9CA05F10AEB227C32FAE74E2DC0 /* OSSExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OSSExecutor.h; path = AliyunOSSSDK/OSSTask/OSSExecutor.h; sourceTree = "<group>"; };
 		FD56E8B4DF376212C5C5E9ECC066C842 /* RACDynamicSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSequence.m; path = ReactiveObjC/RACDynamicSequence.m; sourceTree = "<group>"; };
 		FD89E0C4ED6D69E76403A239E8322CBD /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveObjC/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
-		FDFC970B0131E1B14E3D3F36269CBC44 /* Pods-QQAliyunOSSiOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QQAliyunOSSiOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		FE4FB4A47816A6B98006C8E02C67B88C /* RACAnnotations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACAnnotations.h; path = ReactiveObjC/RACAnnotations.h; sourceTree = "<group>"; };
 		FEF3E1A9945FAE90C4554D6869EF0194 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
 		FF2CA928313C5237D963888024E18AC8 /* OSSIPv6Adapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OSSIPv6Adapter.m; path = AliyunOSSSDK/OSSIPv6/OSSIPv6Adapter.m; sourceTree = "<group>"; };
@@ -794,27 +797,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C43BE1D6A68925CEA820171F659F04E /* Targets Support Files */ = {
+		13F7E45001E547193369C9C5B0B52883 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3206E4AACA4CBF768D30052C1C32A0C /* Pods-QQAliyunOSSiOS_Example */,
-				EE4CE249D6920160E34A8B842844D180 /* Pods-QQAliyunOSSiOS_Tests */,
+				6AE9B1D79D82D2E2D6A7B7016F5D3A83 /* Pods-QQAliyunOSSiOS_Example */,
+				C17CD5AE52B2C9759F0627AD1BD960B3 /* Pods-QQAliyunOSSiOS_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4FFDD266EB3F1677DC83E3A1DEAACC49 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				926CBA71F9EE99CBE451419F04767E57 /* AliyunOSSiOS.modulemap */,
-				495832A2D137356C4DAF5BB21319A91B /* AliyunOSSiOS.xcconfig */,
-				0A2E93C4C9F9CAC4A00AEA8FD6261BE0 /* AliyunOSSiOS-dummy.m */,
-				B537807C38895A515694B5DB44C86BDD /* AliyunOSSiOS-Info.plist */,
-				9D30B3429AAFF0B0290E16AB08C3F57C /* AliyunOSSiOS-prefix.pch */,
-				BCD8653457839CEE43DF6D2F483B2C79 /* AliyunOSSiOS-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AliyunOSSiOS";
 			sourceTree = "<group>";
 		};
 		55700751D9D1929058246A8C7213E62F /* Pods */ = {
@@ -828,6 +817,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		67605B8273431ED16BCAAC03B61A45B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				910C31C1C8F07990EC48570ACB53BC85 /* Info.plist */,
+				863AF249B098E032D1058FEB7314A23E /* QQAliyunOSSiOS.modulemap */,
+				42CE7E071A2B3D3E0A5F38B1A4294FBC /* QQAliyunOSSiOS.xcconfig */,
+				BAC3232EA9037E7557B34A670E2A9AD8 /* QQAliyunOSSiOS-dummy.m */,
+				3758E709D9D14608FAF92DE03AEC3F88 /* QQAliyunOSSiOS-prefix.pch */,
+				F27E855914394FC0D21AA2125FD730DD /* QQAliyunOSSiOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QQAliyunOSSiOS";
+			sourceTree = "<group>";
+		};
+		6AE9B1D79D82D2E2D6A7B7016F5D3A83 /* Pods-QQAliyunOSSiOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D61770AE8301B5AF3611EB0986D37B2D /* Info.plist */,
+				41FDF9D6F6181B47FBCC200080016EFB /* Pods-QQAliyunOSSiOS_Example.modulemap */,
+				5B34C898B2F20A20CCF67C919F0E4D6B /* Pods-QQAliyunOSSiOS_Example-acknowledgements.markdown */,
+				4E9F16506617174FE935BE87312932E5 /* Pods-QQAliyunOSSiOS_Example-acknowledgements.plist */,
+				504FD7E110A1A03E4A403D01E581EA18 /* Pods-QQAliyunOSSiOS_Example-dummy.m */,
+				A16BA38021D0CCA2B8DC8D0E1BB336AF /* Pods-QQAliyunOSSiOS_Example-frameworks.sh */,
+				0B15AC4F15E361DD2128A62AC31DB33F /* Pods-QQAliyunOSSiOS_Example-resources.sh */,
+				9617135B8C43E96B956002E12589CAA1 /* Pods-QQAliyunOSSiOS_Example-umbrella.h */,
+				9BE907D321FBE15D256E493E1E75C2CC /* Pods-QQAliyunOSSiOS_Example.debug.xcconfig */,
+				811B696ABAC8E27CA1A1CB00E8F84690 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */,
+			);
+			name = "Pods-QQAliyunOSSiOS_Example";
+			path = "Target Support Files/Pods-QQAliyunOSSiOS_Example";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -835,22 +856,8 @@
 				ACDA2AD7C7F069CE45369A9015EE470F /* Frameworks */,
 				55700751D9D1929058246A8C7213E62F /* Pods */,
 				EEBB02FE20997369ADA54FED69E03311 /* Products */,
-				4C43BE1D6A68925CEA820171F659F04E /* Targets Support Files */,
+				13F7E45001E547193369C9C5B0B52883 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8D5B4E2D4A241482624C1B82EB79A3EB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2FE7438A5A2C1EECA421E4CFB408B9EB /* YYModel.modulemap */,
-				B70EBE9661FB59572632EC41A1FBDF70 /* YYModel.xcconfig */,
-				9E68CAD6546C0DD09FA50B605D780C0E /* YYModel-dummy.m */,
-				86A479FE4FD6AB664F6B7FA93505A881 /* YYModel-Info.plist */,
-				02B4741C656570FFA7173955EA69134B /* YYModel-prefix.pch */,
-				236A0BD16E059C9F489F85772EB894F1 /* YYModel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
 		98953375B5ED4804BEF20900AA8BCA18 /* iOS */ = {
@@ -1056,7 +1063,7 @@
 				BA5EB6E536100F73E70BB0F1488C0710 /* UITextField+RACSignalSupport.m */,
 				4F7712AD5A27468FF6958A065E9BBB24 /* UITextView+RACSignalSupport.h */,
 				D502D0ACC354E2560AB8038D0CBBC25C /* UITextView+RACSignalSupport.m */,
-				F352BB1BDE0BB283A12B99B04ECCBA1A /* Support Files */,
+				DAA261BB526C4095D34F9E3F73D77143 /* Support Files */,
 			);
 			name = ReactiveObjC;
 			path = ReactiveObjC;
@@ -1070,7 +1077,7 @@
 				B9739BF3FB26AAA50FB1526C94684BFF /* YYClassInfo.h */,
 				C6B4DCD2597A13EC538850D8854D79E8 /* YYClassInfo.m */,
 				FEF3E1A9945FAE90C4554D6869EF0194 /* YYModel.h */,
-				8D5B4E2D4A241482624C1B82EB79A3EB /* Support Files */,
+				DA2B0A0A28DF7E51A370E4F6959B5735 /* Support Files */,
 			);
 			name = YYModel;
 			path = YYModel;
@@ -1081,7 +1088,7 @@
 			children = (
 				55487E9EDE04B1B1DE254F4539F9B9FC /* QQOSSImageManager.h */,
 				D01E2D2F516BADDFB1903A8ECF3882A5 /* QQOSSImageManager.m */,
-				EA6C23E872E53698F2A175F20E34D351 /* Support Files */,
+				67605B8273431ED16BCAAC03B61A45B9 /* Support Files */,
 			);
 			name = QQAliyunOSSiOS;
 			path = QQAliyunOSSiOS;
@@ -1198,40 +1205,70 @@
 				A5BE26573B6EC63788F4770653236419 /* OSSUtil.m */,
 				96CD4799EB966A18BB08C5C8C72AEB96 /* OSSXMLDictionary.h */,
 				7804DC8C00ED735D8CE15B6D5DD1E3F4 /* OSSXMLDictionary.m */,
-				4FFDD266EB3F1677DC83E3A1DEAACC49 /* Support Files */,
+				E59F12D01E8D2AE2B93A780434934778 /* Support Files */,
 			);
 			name = AliyunOSSiOS;
 			path = AliyunOSSiOS;
 			sourceTree = "<group>";
 		};
-		EA6C23E872E53698F2A175F20E34D351 /* Support Files */ = {
+		C17CD5AE52B2C9759F0627AD1BD960B3 /* Pods-QQAliyunOSSiOS_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				34395D89BF29EE4DFFABFAAC5A71A70F /* QQAliyunOSSiOS.modulemap */,
-				DA1967B4353D09A9FE5EFAC5F1E2A724 /* QQAliyunOSSiOS.xcconfig */,
-				9A951CF6DCF250A4AF1F8127C53F0632 /* QQAliyunOSSiOS-dummy.m */,
-				404724C7DD8FECD2AABB63E64A1D7000 /* QQAliyunOSSiOS-Info.plist */,
-				95B4301B8ED5F0E317495AFA7184AAEA /* QQAliyunOSSiOS-prefix.pch */,
-				4010523D6546E72D00D08C85A8B668A5 /* QQAliyunOSSiOS-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/QQAliyunOSSiOS";
-			sourceTree = "<group>";
-		};
-		EE4CE249D6920160E34A8B842844D180 /* Pods-QQAliyunOSSiOS_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F1EC02D10CFCA3819939073DEEAA6FD2 /* Pods-QQAliyunOSSiOS_Tests.modulemap */,
-				C26DF2CDDE0EF9B809E24CFCAC763DCE /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.markdown */,
-				79FA91D1F8603F7FD2A428B52F57002B /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.plist */,
-				979C4F51F5501BDE0899F82AFFCB9243 /* Pods-QQAliyunOSSiOS_Tests-dummy.m */,
-				BCEC27FE49F3A44548B2874F364F936B /* Pods-QQAliyunOSSiOS_Tests-Info.plist */,
-				3A21B47FAA375F1A1486AE01A97D6325 /* Pods-QQAliyunOSSiOS_Tests-umbrella.h */,
-				D3E487E069A0C07B0F9E8B40C1788C6F /* Pods-QQAliyunOSSiOS_Tests.debug.xcconfig */,
-				410D5FD6CE25F61E6BF2AE68667D59DA /* Pods-QQAliyunOSSiOS_Tests.release.xcconfig */,
+				0A18268A53CD3720381721486245700F /* Info.plist */,
+				012735A4D29EACDA7B5713648BDB065C /* Pods-QQAliyunOSSiOS_Tests.modulemap */,
+				2447FD7065CD8AD188D140CBA763E7CD /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.markdown */,
+				DB0AAAD9C7850D8B5DF7EB1EF54CC83E /* Pods-QQAliyunOSSiOS_Tests-acknowledgements.plist */,
+				D3422077C4A698583AC06464E6A292C2 /* Pods-QQAliyunOSSiOS_Tests-dummy.m */,
+				B17C2C09C12C6E313B6F110C24C38ACC /* Pods-QQAliyunOSSiOS_Tests-frameworks.sh */,
+				CF9E86E0622FB0392D85C1BAF056AD42 /* Pods-QQAliyunOSSiOS_Tests-resources.sh */,
+				4AC5438EB2CD366A5C3813536D91CB0F /* Pods-QQAliyunOSSiOS_Tests-umbrella.h */,
+				B3DA436588B5A01A451D2B20CD6C03F1 /* Pods-QQAliyunOSSiOS_Tests.debug.xcconfig */,
+				B512CD6CAA3C2B4C4BA51747AA39301E /* Pods-QQAliyunOSSiOS_Tests.release.xcconfig */,
 			);
 			name = "Pods-QQAliyunOSSiOS_Tests";
 			path = "Target Support Files/Pods-QQAliyunOSSiOS_Tests";
+			sourceTree = "<group>";
+		};
+		DA2B0A0A28DF7E51A370E4F6959B5735 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E55539140E347A363BDD5340B7D4F1D /* Info.plist */,
+				784C67F452FA8B6EDA36D757E7D4F99A /* YYModel.modulemap */,
+				B35D68434C1DF85CDCA0A3CAB9396503 /* YYModel.xcconfig */,
+				269941E18E0E55EE5D664A4D20D16AC6 /* YYModel-dummy.m */,
+				C89A2BC790B73EC1D35F520941DC79F7 /* YYModel-prefix.pch */,
+				C5F43359B8975BB051CAA8E02CEC34F3 /* YYModel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		DAA261BB526C4095D34F9E3F73D77143 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				949A378AA266EA4C708563C9852D5739 /* Info.plist */,
+				724B6090CF55EAFB468F18345FB99852 /* ReactiveObjC.modulemap */,
+				3AB84FE19988FA2CAE42A122EEEF605F /* ReactiveObjC.xcconfig */,
+				0C1EF556556B1126DE8E97AFE0982B6B /* ReactiveObjC-dummy.m */,
+				0211881586EB67EA3A665D4B24940AB6 /* ReactiveObjC-prefix.pch */,
+				98DB1AF75B2F24AD7AC02D64B731CFF7 /* ReactiveObjC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReactiveObjC";
+			sourceTree = "<group>";
+		};
+		E59F12D01E8D2AE2B93A780434934778 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CABEE9AF6804FE9276ABFFAF15DF124 /* AliyunOSSiOS.modulemap */,
+				05A206CA4556A2791AFC33E8C3623393 /* AliyunOSSiOS.xcconfig */,
+				66C5F5852DAEC84539F1E4E97AE8F6AC /* AliyunOSSiOS-dummy.m */,
+				477742BE132F22CB9E93A0B8279F4463 /* AliyunOSSiOS-prefix.pch */,
+				E28A9064949FD833D1979C92FA3974DA /* AliyunOSSiOS-umbrella.h */,
+				2C9BE7C46069B0039A817E35F060D446 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AliyunOSSiOS";
 			sourceTree = "<group>";
 		};
 		EEBB02FE20997369ADA54FED69E03311 /* Products */ = {
@@ -1245,37 +1282,6 @@
 				15FE4254DF694DE10FAF6C56440781B0 /* YYModel.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F3206E4AACA4CBF768D30052C1C32A0C /* Pods-QQAliyunOSSiOS_Example */ = {
-			isa = PBXGroup;
-			children = (
-				4B0A29D4D8C82FFFB3A94625BC087A22 /* Pods-QQAliyunOSSiOS_Example.modulemap */,
-				31E49ACEF65B4FFA964FFD2475EC016E /* Pods-QQAliyunOSSiOS_Example-acknowledgements.markdown */,
-				256281556D3F14591571904878DF6FC8 /* Pods-QQAliyunOSSiOS_Example-acknowledgements.plist */,
-				57D74C143590F5E8A703183FF1A16C3F /* Pods-QQAliyunOSSiOS_Example-dummy.m */,
-				F5D198CD2C392066835E7E3400DA7716 /* Pods-QQAliyunOSSiOS_Example-frameworks.sh */,
-				48399E97214FBC543667EFC3484725D8 /* Pods-QQAliyunOSSiOS_Example-Info.plist */,
-				FDFC970B0131E1B14E3D3F36269CBC44 /* Pods-QQAliyunOSSiOS_Example-umbrella.h */,
-				F6F125939027389352B55E4C8E86BDD2 /* Pods-QQAliyunOSSiOS_Example.debug.xcconfig */,
-				68E734746C1594FC411DA94347956822 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */,
-			);
-			name = "Pods-QQAliyunOSSiOS_Example";
-			path = "Target Support Files/Pods-QQAliyunOSSiOS_Example";
-			sourceTree = "<group>";
-		};
-		F352BB1BDE0BB283A12B99B04ECCBA1A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D0E1D1208349FA8F785731CCED37534F /* ReactiveObjC.modulemap */,
-				CDB23367E597A683E3EA02D3577F8DEB /* ReactiveObjC.xcconfig */,
-				6D462F9CA1A8520BFDC731391D077F43 /* ReactiveObjC-dummy.m */,
-				52C8605C82F782ABA8C1AF82341CC66E /* ReactiveObjC-Info.plist */,
-				82DCEA4C3A54846B4AFEE02D0136B055 /* ReactiveObjC-prefix.pch */,
-				ED7FC0FCAE3B8494FCC4D16D579B445A /* ReactiveObjC-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ReactiveObjC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1920,104 +1926,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		23D41B0F4F89B0178A08726262D9D4C1 /* Release */ = {
+		0D51AE7CFF998BADF6D233B555A029CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDB23367E597A683E3EA02D3577F8DEB /* ReactiveObjC.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
-				PRODUCT_MODULE_NAME = ReactiveObjC;
-				PRODUCT_NAME = ReactiveObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		24326BB9C708FE864FCA66042ED4AB5A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDB23367E597A683E3EA02D3577F8DEB /* ReactiveObjC.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
-				PRODUCT_MODULE_NAME = ReactiveObjC;
-				PRODUCT_NAME = ReactiveObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4BE7C034E1339F92B7BCCA570EEFCA06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68E734746C1594FC411DA94347956822 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4E53D022A197CDB2E63DE11DEB388E8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 495832A2D137356C4DAF5BB21319A91B /* AliyunOSSiOS.xcconfig */;
+			baseConfigurationReference = 05A206CA4556A2791AFC33E8C3623393 /* AliyunOSSiOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2029,7 +1940,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/AliyunOSSiOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2044,6 +1955,71 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		20C6DA0E06E60D986BF0BE2A1D78E289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B512CD6CAA3C2B4C4BA51747AA39301E /* Pods-QQAliyunOSSiOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Tests/Pods-QQAliyunOSSiOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		337AF5154C44FED9938EB6F4B5005B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35D68434C1DF85CDCA0A3CAB9396503 /* YYModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2104,101 +2080,9 @@
 			};
 			name = Release;
 		};
-		5EE4A70AFDBC1A4E7D9F768EE34E60DA /* Release */ = {
+		589A35FF6EB182E17AFD47E4184FD36A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA1967B4353D09A9FE5EFAC5F1E2A724 /* QQAliyunOSSiOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS.modulemap";
-				PRODUCT_MODULE_NAME = QQAliyunOSSiOS;
-				PRODUCT_NAME = QQAliyunOSSiOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		694BBA7AA7F60CD81F7AA735423465A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA1967B4353D09A9FE5EFAC5F1E2A724 /* QQAliyunOSSiOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS.modulemap";
-				PRODUCT_MODULE_NAME = QQAliyunOSSiOS;
-				PRODUCT_NAME = QQAliyunOSSiOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6AF911851D996A3705E51AFDE182198E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70EBE9661FB59572632EC41A1FBDF70 /* YYModel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
-				PRODUCT_MODULE_NAME = YYModel;
-				PRODUCT_NAME = YYModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6E16EB91731C28C3EFF86EAB4D9B47BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3E487E069A0C07B0F9E8B40C1788C6F /* Pods-QQAliyunOSSiOS_Tests.debug.xcconfig */;
+			baseConfigurationReference = 811B696ABAC8E27CA1A1CB00E8F84690 /* Pods-QQAliyunOSSiOS_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -2210,7 +2094,165 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Tests/Pods-QQAliyunOSSiOS_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		796E195F9E9326072EBF5859F13AFEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB84FE19988FA2CAE42A122EEEF605F /* ReactiveObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
+				PRODUCT_MODULE_NAME = ReactiveObjC;
+				PRODUCT_NAME = ReactiveObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		821BE59318369DB6173672065864A179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE907D321FBE15D256E493E1E75C2CC /* Pods-QQAliyunOSSiOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F1297294235F12009B429DAAA219BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CE7E071A2B3D3E0A5F38B1A4294FBC /* QQAliyunOSSiOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QQAliyunOSSiOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS.modulemap";
+				PRODUCT_MODULE_NAME = QQAliyunOSSiOS;
+				PRODUCT_NAME = QQAliyunOSSiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		932D05B98FA0C5A9E5976A3609783637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35D68434C1DF85CDCA0A3CAB9396503 /* YYModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3A7AFFCF31FF4FC44805B8E8E3057CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DA436588B5A01A451D2B20CD6C03F1 /* Pods-QQAliyunOSSiOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2228,101 +2270,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		8DFAFE181D1D0F2758CB1B54EBF9FA5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 495832A2D137356C4DAF5BB21319A91B /* AliyunOSSiOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS.modulemap";
-				PRODUCT_MODULE_NAME = AliyunOSSiOS;
-				PRODUCT_NAME = AliyunOSSiOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0B29BFE9DEF37FDFCB015D8CC3D8520 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70EBE9661FB59572632EC41A1FBDF70 /* YYModel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
-				PRODUCT_MODULE_NAME = YYModel;
-				PRODUCT_NAME = YYModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B6CE61F0ACACE4B2873685437B7BD556 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 410D5FD6CE25F61E6BF2AE68667D59DA /* Pods-QQAliyunOSSiOS_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Tests/Pods-QQAliyunOSSiOS_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Tests/Pods-QQAliyunOSSiOS_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2388,11 +2335,10 @@
 			};
 			name = Debug;
 		};
-		D6870F24544DA1C57F8ACF3A051B2CCD /* Debug */ = {
+		C1299AB76B21EA8CEEBF9A11CA7AE162 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6F125939027389352B55E4C8E86BDD2 /* Pods-QQAliyunOSSiOS_Example.debug.xcconfig */;
+			baseConfigurationReference = 42CE7E071A2B3D3E0A5F38B1A4294FBC /* QQAliyunOSSiOS.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2402,24 +2348,84 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QQAliyunOSSiOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QQAliyunOSSiOS_Example/Pods-QQAliyunOSSiOS_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/QQAliyunOSSiOS/QQAliyunOSSiOS.modulemap";
+				PRODUCT_MODULE_NAME = QQAliyunOSSiOS;
+				PRODUCT_NAME = QQAliyunOSSiOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		C23B9823BEC72A83E01394EC0842FF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB84FE19988FA2CAE42A122EEEF605F /* ReactiveObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
+				PRODUCT_MODULE_NAME = ReactiveObjC;
+				PRODUCT_NAME = ReactiveObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E22C74DE96F612D028422D60A9C03D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A206CA4556A2791AFC33E8C3623393 /* AliyunOSSiOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AliyunOSSiOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AliyunOSSiOS/AliyunOSSiOS.modulemap";
+				PRODUCT_MODULE_NAME = AliyunOSSiOS;
+				PRODUCT_NAME = AliyunOSSiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2427,8 +2433,8 @@
 		14073EA8A151E43DF2AC45135F52D7E6 /* Build configuration list for PBXNativeTarget "ReactiveObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24326BB9C708FE864FCA66042ED4AB5A /* Debug */,
-				23D41B0F4F89B0178A08726262D9D4C1 /* Release */,
+				796E195F9E9326072EBF5859F13AFEA7 /* Debug */,
+				C23B9823BEC72A83E01394EC0842FF3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2436,8 +2442,8 @@
 		18CE7CA34CA4DC98567FAE97A25FFA50 /* Build configuration list for PBXNativeTarget "AliyunOSSiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E53D022A197CDB2E63DE11DEB388E8A /* Debug */,
-				8DFAFE181D1D0F2758CB1B54EBF9FA5F /* Release */,
+				0D51AE7CFF998BADF6D233B555A029CA /* Debug */,
+				E22C74DE96F612D028422D60A9C03D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2445,8 +2451,8 @@
 		2CF73C83FB47CEB742A53F3ACF398190 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0B29BFE9DEF37FDFCB015D8CC3D8520 /* Debug */,
-				6AF911851D996A3705E51AFDE182198E /* Release */,
+				932D05B98FA0C5A9E5976A3609783637 /* Debug */,
+				337AF5154C44FED9938EB6F4B5005B48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2463,8 +2469,8 @@
 		3817596CC62DD438F20FE5BE039C0ED7 /* Build configuration list for PBXNativeTarget "QQAliyunOSSiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				694BBA7AA7F60CD81F7AA735423465A1 /* Debug */,
-				5EE4A70AFDBC1A4E7D9F768EE34E60DA /* Release */,
+				C1299AB76B21EA8CEEBF9A11CA7AE162 /* Debug */,
+				8F1297294235F12009B429DAAA219BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2472,8 +2478,8 @@
 		C63B8177FC0C2054ACC34C0F1C3C2C18 /* Build configuration list for PBXNativeTarget "Pods-QQAliyunOSSiOS_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6870F24544DA1C57F8ACF3A051B2CCD /* Debug */,
-				4BE7C034E1339F92B7BCCA570EEFCA06 /* Release */,
+				821BE59318369DB6173672065864A179 /* Debug */,
+				589A35FF6EB182E17AFD47E4184FD36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2481,8 +2487,8 @@
 		DEB32DFEDA8071C6A91B55969F8DAC34 /* Build configuration list for PBXNativeTarget "Pods-QQAliyunOSSiOS_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E16EB91731C28C3EFF86EAB4D9B47BF /* Debug */,
-				B6CE61F0ACACE4B2873685437B7BD556 /* Release */,
+				A3A7AFFCF31FF4FC44805B8E8E3057CC /* Debug */,
+				20C6DA0E06E60D986BF0BE2A1D78E289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
