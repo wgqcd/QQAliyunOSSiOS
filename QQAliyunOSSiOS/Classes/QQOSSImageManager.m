@@ -289,9 +289,10 @@ static NSString *GET_TOKEN_URL;
 }
 - (OSSClient *)ossClient{
     NSAssert(GET_TOKEN_URL, @"请注册获取token的服务器地址");
+    self.dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
     NSDate *date = [self.dateFormatter dateFromString:self.token.Expiration];
-    date = [NSDate dateWithTimeInterval:60*60*8 sinceDate:date];
-    if (_ossClient == nil || self.token == nil || self.token.Expiration == nil || [date compare:[NSDate date]] ==  NSOrderedAscending) {
+    NSTimeInterval interval = [date timeIntervalSinceNow] + 60*60*8;
+    if (_ossClient == nil || self.token == nil || self.token.Expiration == nil || interval > 0) {
         NSString *url = GET_TOKEN_URL;
         NSError *error = nil;
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url] options:NSDataReadingMappedAlways error:&error];
@@ -308,9 +309,9 @@ static NSString *GET_TOKEN_URL;
     return _ossClient;
 }
 -(NSString*)randomImageName{
-    
+    self.dateFormatter.dateFormat = @"yyyyMMddHHmmssSSS";
     NSString *time = [self.dateFormatter stringFromDate:[NSDate date]];
-    NSString *name = [NSString stringWithFormat:@"%@-%u.%@",time,arc4random(),self.format == QQOSSImageCompressFormatJPG ? @"jpg":@"png"];
+    NSString *name = [NSString stringWithFormat:@"%@%u.%@",time,arc4random(),self.format == QQOSSImageCompressFormatJPG ? @"jpg":@"png"];
     NSLog(@"随机名：%@",name);
     return name;
 }
@@ -318,7 +319,6 @@ static NSString *GET_TOKEN_URL;
 - (NSDateFormatter *)dateFormatter  {
     if (!_dateFormatter) {
         _dateFormatter = [[NSDateFormatter alloc]init];
-        _dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SS";
     }
     return _dateFormatter;
 }
