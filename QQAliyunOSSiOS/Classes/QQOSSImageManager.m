@@ -292,7 +292,7 @@ static NSString *GET_TOKEN_URL;
     self.dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
     NSDate *date = [self.dateFormatter dateFromString:self.token.Expiration];
     NSTimeInterval interval = [date timeIntervalSinceNow] + 60*60*8;
-    if (_ossClient == nil || self.token == nil || self.token.Expiration == nil || interval > 0) {
+    if (_ossClient == nil || self.token == nil || self.token.Expiration == nil || interval < 0) {
         NSString *url = GET_TOKEN_URL;
         NSError *error = nil;
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url] options:NSDataReadingMappedAlways error:&error];
