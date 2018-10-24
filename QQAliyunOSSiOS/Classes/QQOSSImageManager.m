@@ -88,20 +88,14 @@ static NSString *GET_TOKEN_URL;
     return _sharedmanager ;
 }
 - (RACSignal<QQOSSResult< ALiOSSBucket *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path1:(NSString *)path{
+    if ([self validationImageArray:imageArray] == NO) {
+        return [self noImageErrorSignal];
+    }
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         NSMutableArray *requestArray = [NSMutableArray arrayWithCapacity:imageArray.count];
         __block OSSTask *allTask ;
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            NSString *filePath = path;
-            if ([filePath hasPrefix:@"/"]) {
-                filePath = [filePath substringFromIndex:1];
-            }
-            if (filePath && ![filePath hasSuffix:@"/"]) {
-                filePath = [filePath stringByAppendingString:@"/"];
-            }
-            if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
-                filePath = @"";
-            }
+            NSString *filePath = [self pathWithString:path];
             NSMutableArray *taskArray = [NSMutableArray arrayWithCapacity:imageArray.count];
             
             NSMutableArray *imageNameArray = [NSMutableArray arrayWithCapacity:imageArray.count];
@@ -163,6 +157,9 @@ static NSString *GET_TOKEN_URL;
     return signal;
 }
 - (RACSignal<QQOSSResult<NSArray< ALiOSSBucket*> *> *> *)putImageArray:(NSArray <UIImage*> *)imageArray bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
+    if ([self validationImageArray:imageArray] == NO) {
+        return [self noImageErrorSignal];
+    }
     NSMutableArray *signalArray = [NSMutableArray arrayWithCapacity:imageArray.count];
     for (UIImage *image in imageArray) {
         RACSignal *signal = [self putImage:image  bucketName:bucketName endpoint:endpoint path:path];
@@ -184,14 +181,39 @@ static NSString *GET_TOKEN_URL;
     
     return signal;
 }
-- (RACSignal<QQOSSResult<ALiOSSBucket *> *> *)putImage:(UIImage *)image bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
-    if (self.enableLog) {
-         NSLog(@"开始%f",[[NSDate date] timeIntervalSince1970]);
+- (BOOL)validationImage:(UIImage*)image{
+    return image && [image isKindOfClass:[UIImage class]];
+}
+- (BOOL)validationImageArray:(NSArray< UIImage*>*)imageArray{
+    if (imageArray == nil || imageArray.count == 0) {
+        return NO;
     }
-    
+    for (UIImage *image in imageArray) {
+        if (![image isKindOfClass:[UIImage class]]) {
+            return NO;
+        }
+    }
+    return YES;
+}
+- (RACSignal<QQOSSResult*>*)noImageErrorSignal{
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        QQOSSResult *result = [[QQOSSResult alloc]init];
+        result.error = [NSError errorWithDomain:@"未添加图片" code:-1 userInfo:nil];
+        result.StatusMsg = @"未添加图片";
+        result.StatusCode = -1;
+        [subscriber sendNext:result];
+        [subscriber sendCompleted];
+        return nil;
+    }];
+}
+- (RACSignal<QQOSSResult<ALiOSSBucket *> *> *)putImage:(UIImage *)image bucketName:(NSString *)bucketName endpoint:(NSString *)endpoint path:(NSString *)path{
+    if ([self validationImage:image] == NO) {
+        return [self noImageErrorSignal];
+    }
+     QQOSSResult *result = [[QQOSSResult alloc]init];
     if (!self.ossClient) {
         return [RACSignal  createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-            QQOSSResult *result = [[QQOSSResult alloc]init];
+           
             result.StatusCode = -1;
             result.StatusMsg = @"阿里云token认证失败";
             result.error = [NSError errorWithDomain:result.StatusMsg code:-1 userInfo:nil];
@@ -219,7 +241,6 @@ static NSString *GET_TOKEN_URL;
                 NSLog(@"执行任务%f",[[NSDate date] timeIntervalSince1970]);
             }
             [task   continueWithBlock:^id _Nullable(OSSTask * _Nonnull task) {
-                QQOSSResult *result = [[QQOSSResult alloc]init];
                 if (self.enableLog) {
                     NSLog(@"结果%f",[[NSDate date] timeIntervalSince1970]);
                 }
@@ -267,16 +288,7 @@ static NSString *GET_TOKEN_URL;
     if (endpoint) {
         self.ossClient.endpoint = endpoint;
     }
-    NSString *filePath = path;
-    if ([filePath hasPrefix:@"/"]) {
-        filePath = [filePath substringFromIndex:1];
-    }
-    if (filePath && ![filePath hasSuffix:@"/"]) {
-        filePath = [filePath stringByAppendingString:@"/"];
-    }
-    if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
-        filePath = @"";
-    }
+    NSString *filePath = [self pathWithString:path];
     NSAssert(bucketName, @"bucket不能为空");
     OSSPutObjectRequest  *_putRequest;
     _putRequest = [OSSPutObjectRequest new];
@@ -286,6 +298,19 @@ static NSString *GET_TOKEN_URL;
     _putRequest.isAuthenticationRequired = YES;
     
     return _putRequest  ;
+}
+- (NSString *)pathWithString:(NSString*)path{
+    NSString *filePath = path;
+    if ([filePath hasPrefix:@"/"]) {
+        filePath = [filePath substringFromIndex:1];
+    }
+    if (filePath && ![[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""]  && ![filePath hasSuffix:@"/"]) {
+        filePath = [filePath stringByAppendingString:@"/"];
+    }
+    if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
+        filePath = @"";
+    }
+    return filePath;
 }
 - (OSSClient *)ossClient{
     NSAssert(GET_TOKEN_URL, @"请注册获取token的服务器地址");
