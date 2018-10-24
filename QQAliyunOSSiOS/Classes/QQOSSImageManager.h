@@ -38,6 +38,7 @@ typedef enum : NSUInteger {
 + (void)enableLog;
 + (instancetype)sharedManager;
 -(NSString*)randomImageName;
++(NSString*)pathWithString:(NSString*)path;
 
 /**
  上传单张图片

@@ -57,25 +57,25 @@
 //        NSLog(@"%@",self.imageURL);
 //    }];
 //
-//    [[[QQOSSImageManager sharedManager] putImageArray:@[self.image] bucketName:@"common-rxjy" endpoint:@"https://oss-cn-beijing.aliyuncs.com" path1:@"test"] subscribeNext:^(QQOSSResult<ALiOSSBucket *> * _Nullable x) {
-//        if (x.error) {
-//            NSLog(@"%@",x.error);
-//            return ;
-//        }
-//        self.urlLabel.text = x.Body.imageURLArray.firstObject;
-//        self.imageURL = x.Body.imageURLArray.firstObject;
-//        NSLog(@"%@",self.imageURL);
-//    }];
-    
-    [[[QQOSSImageManager sharedManager] putImageArray:@[self.image] bucketName:@"common-rxjy" endpoint:@"https://oss-cn-beijing.aliyuncs.com" path:@"test"] subscribeNext:^(QQOSSResult<NSArray< ALiOSSBucket*> *> * _Nullable x) {
+    [[[QQOSSImageManager sharedManager] putImageArray:@[self.image] bucketName:@"common-rxjy" endpoint:@"https://oss-cn-beijing.aliyuncs.com" path1:@"test"] subscribeNext:^(QQOSSResult<ALiOSSBucket *> * _Nullable x) {
         if (x.error) {
             NSLog(@"%@",x.error);
             return ;
         }
-        self.urlLabel.text = x.Body.firstObject.imageURL;
-        self.imageURL = x.Body.firstObject.imageURL;
+        self.urlLabel.text = x.Body.imageURLArray.firstObject;
+        self.imageURL = x.Body.imageURLArray.firstObject;
         NSLog(@"%@",self.imageURL);
     }];
+    
+//    [[[QQOSSImageManager sharedManager] putImageArray:@[self.image] bucketName:@"common-rxjy" endpoint:@"https://oss-cn-beijing.aliyuncs.com" path:@""] subscribeNext:^(QQOSSResult<NSArray< ALiOSSBucket*> *> * _Nullable x) {
+//        if (x.error) {
+//            NSLog(@"%@",x.error);
+//            return ;
+//        }
+//        self.urlLabel.text = x.Body.firstObject.imageURL;
+//        self.imageURL = x.Body.firstObject.imageURL;
+//        NSLog(@"%@",self.imageURL);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning

@@ -28,16 +28,7 @@ static NSString *GET_TOKEN_URL;
     if ([endpoint hasPrefix:@"https://"]) {
         endpoint = [endpoint substringFromIndex:8];
     }
-    NSString *filePath = self.path;
-    if ([filePath hasPrefix:@"/"]) {
-        filePath = [filePath substringFromIndex:1];
-    }
-    if (filePath && ![filePath hasSuffix:@"/"]) {
-        filePath = [filePath stringByAppendingString:@"/"];
-    }
-    if (!filePath || [[filePath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""] ) {
-        filePath = @"";
-    }
+    NSString *filePath = [QQOSSImageManager pathWithString:self.path];
     return [NSString stringWithFormat:@"https://%@.%@/%@%@",self.bucketName,endpoint,filePath,self.imageName];
 }
 - (NSString *)description{
@@ -71,6 +62,7 @@ static NSString *GET_TOKEN_URL;
 @property(nonatomic,strong)OSSClient            *ossClient;
 @property(nonatomic,strong)ALOSSToken            *token;
 @property(nonatomic,assign)BOOL            enableLog;
+
 @end
 @implementation QQOSSImageManager
 + (void)enableLog{
@@ -95,7 +87,7 @@ static NSString *GET_TOKEN_URL;
         NSMutableArray *requestArray = [NSMutableArray arrayWithCapacity:imageArray.count];
         __block OSSTask *allTask ;
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            NSString *filePath = [self pathWithString:path];
+            NSString *filePath = [QQOSSImageManager pathWithString:path];
             NSMutableArray *taskArray = [NSMutableArray arrayWithCapacity:imageArray.count];
             
             NSMutableArray *imageNameArray = [NSMutableArray arrayWithCapacity:imageArray.count];
@@ -288,7 +280,7 @@ static NSString *GET_TOKEN_URL;
     if (endpoint) {
         self.ossClient.endpoint = endpoint;
     }
-    NSString *filePath = [self pathWithString:path];
+    NSString *filePath = [QQOSSImageManager pathWithString:path];
     NSAssert(bucketName, @"bucket不能为空");
     OSSPutObjectRequest  *_putRequest;
     _putRequest = [OSSPutObjectRequest new];
@@ -299,7 +291,7 @@ static NSString *GET_TOKEN_URL;
     
     return _putRequest  ;
 }
-- (NSString *)pathWithString:(NSString*)path{
++ (NSString *)pathWithString:(NSString*)path{
     NSString *filePath = path;
     if ([filePath hasPrefix:@"/"]) {
         filePath = [filePath substringFromIndex:1];
