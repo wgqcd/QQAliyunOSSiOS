@@ -41,5 +41,5 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'ReactiveObjC'
   s.dependency 'AliyunOSSiOS'
-  s.dependency 'YYModel'
+  #s.dependency 'YYModel'
 end

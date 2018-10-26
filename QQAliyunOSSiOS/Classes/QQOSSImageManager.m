@@ -12,7 +12,7 @@
 #import "QQOSSImageManager.h"
 #import <AliyunOSSiOS/AliyunOSSiOS.h>
 
-#import <YYModel/YYModel.h>
+//#import <YYModel/YYModel.h>
 
 static NSString *GET_TOKEN_URL;
 @implementation ALiOSSBucket
@@ -313,7 +313,18 @@ static NSString *GET_TOKEN_URL;
         NSString *url = GET_TOKEN_URL;
         NSError *error = nil;
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url] options:NSDataReadingMappedAlways error:&error];
-        ALOSSToken *token = [ALOSSToken yy_modelWithJSON:data];
+        NSError *jsonError = nil;
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+        if (error || dict.count == 0) {
+            NSLog(@"token获取失败");
+            return nil;
+        }
+        ALOSSToken *token = [[ALOSSToken alloc]init];
+        token.Expiration = dict[@"Expiration"];
+        token.SecurityToken = dict[@"SecurityToken"];
+        token.AccessKeyId = dict[@"AccessKeyId"];
+        token.AccessKeySecret = dict[@"AccessKeySecret"];
+        token.StatusCode = dict[@"StatusCode"];
         self.token = token;
         if (![token.StatusCode isEqualToString: @"200"]) {
             NSLog(@"token获取失败");

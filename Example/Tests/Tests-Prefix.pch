@@ -2,7 +2,7 @@
 
 #ifdef __OBJC__
 #import <Speech/Speech.h>
-  @import Expecta;
+ 
   @import FBSnapshotTestCase;
   @import Expecta_Snapshots;
 
