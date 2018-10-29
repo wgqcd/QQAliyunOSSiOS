@@ -313,6 +313,9 @@ static NSString *GET_TOKEN_URL;
         NSString *url = GET_TOKEN_URL;
         NSError *error = nil;
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url] options:NSDataReadingMappedAlways error:&error];
+        if (error || !data) {
+            return nil;
+        }
         NSError *jsonError = nil;
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
         if (error || dict.count == 0) {
